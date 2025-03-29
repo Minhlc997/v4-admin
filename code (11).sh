@@ -1,0 +1,27 @@
+pyinstaller --onefile base_decoded.py
+pyinstaller --onefile DDos_decoded.py
+pyinstaller --onefile bomber_decoded.py
+pyinstaller --onefile bot.py
+pyinstaller --onefile checks.py
+pyinstaller --onefile admin.py
+pyinstaller --onefile discord.py
+pyinstaller --onefile ddosbot.py
+pyinstaller --onefile geo.py
+pyinstaller --onefile fludcode.py
+pyinstaller --onefile fakeperson.py
+pyinstaller --onefile infsite.py
+pyinstaller --onefile domain.py
+pyinstaller --onefile mail.py
+pyinstaller --onefile link.py
+pyinstaller --onefile i.py
+pyinstaller --onefile leak.py
+pyinstaller --onefile parsing.py
+pyinstaller --onefile obf.py
+pyinstaller --onefile privatka.py
+pyinstaller --onefile swat.py
+pyinstaller --onefile manuals.py
+pyinstaller --onefile snoserweb.py
+pyinstaller --onefile send.py
+pyinstaller --onefile ustanovka.py
+pyinstaller --onefile osint.py
+# ... (lặp lại cho các tệp khác)

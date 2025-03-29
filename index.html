@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi AutoPay</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin-top: 30px;
+        }
+
+        .pi-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .pi-logo {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .pi-title {
+            color: #2c2c2c;
+            font-weight: bold;
+        }
+
+        .pi-button {
+            background-color: #8250c8;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+        }
+
+        .pi-button:hover {
+            background-color: #6a41a8;
+        }
+
+        .btn-danger {
+            border-radius: 25px;
+            padding: 10px 20px;
+        }
+
+        .card {
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            border-radius: 15px;
+            border: 1px solid #ced4da;
+        }
+
+        .form-control:focus {
+            border-color: #8250c8;
+            box-shadow: 0 0 0 0.2rem rgba(130, 80, 200, 0.25);
+        }
+
+        .status-box {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+        }
+
+        .status-success {
+            color: green;
+        }
+
+        .status-error {
+            color: red;
+        }
+
+        .transaction-history {
+            margin-top: 30px;
+            border: 1px solid #ced4da;
+            border-radius: 15px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+        }
+
+        .transaction-history h4 {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #343a40;
+        }
+
+        .transaction-item {
+            padding: 10px 0;
+            border-bottom: 1px dashed #ced4da;
+        }
+
+        .transaction-item:last-child {
+            border-bottom: none;
+        }
+
+        .transaction-time {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pi-header">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" fill="none" width="140" height="140" class="text-secondary-500">
+                <path fill="currentColor" d="M94.91 66.314c0-1.078.875-1.953 1.954-1.953h18.878c1.079 0 1.953.875 1.953 1.953v14.973a1.953 1.953 0 0 1-1.953 1.953H96.863a1.953 1.953 0 0 1-1.953-1.953V66.314ZM133.97 66.314c0-1.078.875-1.953 1.953-1.953h18.879c1.079 0 1.953.875 1.953 1.953v14.973a1.953 1.953 0 0 1-1.953 1.953h-18.879a1.953 1.953 0 0 1-1.953-1.953V66.314Z"></path>
+                <path fill="currentColor" d="M94.91 115.616v77.765l22.785 8.992v-86.757h16.275v77.765l22.785 8.992v-86.757h15.14c12.491 0 22.618-10.234 22.618-22.858V79.985h-22.618v12.773H80.422c-12.492 0-22.618 10.234-22.618 22.858v15.798h22.618v-15.798h14.489Z"></path>
+                <path fill="currentColor" fill-rule="evenodd" d="M130.122 20.75c-60.368 0-109.305 48.937-109.305 109.305 0 60.367 48.937 109.305 109.305 109.305 60.367 0 109.305-48.938 109.305-109.305 0-60.368-48.938-109.305-109.305-109.305ZM.943 130.055C.943 58.711 58.778.875 130.122.875c71.343 0 129.178 57.836 129.178 129.18 0 71.343-57.835 129.178-129.178 129.178C58.778 259.233.943 201.398.943 130.055Z" clip-rule="evenodd"></path>
+            </svg>
+            <h2 class="pi-title">Pi AutoPay</h2>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <!-- Trường Kí tự ví Pi (walletSeed) hiện tại chỉ là placeholder và không thực sự xác thực ví Pi.
+                     Trong một ứng dụng Pi App thực tế, bạn sẽ không yêu cầu người dùng nhập kí tự ví của họ trực tiếp vào frontend.
+                     Thay vào đó, bạn sẽ sử dụng Pi SDK để xác thực người dùng Pi thông qua Pi Browser. -->
+                <div class="form-group">
+                    <label for="walletSeed">Kí tự ví Pi (Placeholder)</label>
+                    <input type="password" class="form-control" id="walletSeed" placeholder="Nhập kí tự ví của bạn (Placeholder - Không dùng cho ví thật)">
+                    <small class="form-text text-muted">Đây chỉ là placeholder. Trong ứng dụng Pi App thực tế, xác thực ví Pi sẽ được xử lý khác.</small>
+                </div>
+                <div class="form-group">
+                    <label for="recipientWallet">Ví nhận tự động</label>
+                    <input type="text" class="form-control" id="recipientWallet" placeholder="Nhập địa chỉ ví Pi cần chuyển tự động">
+                </div>
+                <div class="form-group">
+                    <label for="piAmount">Số lượng Pi</label>
+                    <input type="number" class="form-control" id="piAmount" value="0.1" min="0.000001" step="0.000001">
+                    <small class="form-text text-muted">Số lượng Pi cần chuyển mỗi lần (tối thiểu 0.000001 Pi).</small>
+                </div>
+                <div class="form-group">
+                    <label for="delay">Delay tối thiểu (giây)</label>
+                    <input type="number" class="form-control" id="delay" value="1.2" min="1.2" step="0.1">
+                    <small class="form-text text-muted">Thời gian chờ tối thiểu giữa các lần thanh toán (tối thiểu 1.2 giây).</small>
+                </div>
+                <button id="startButton" class="btn btn-block pi-button">Bắt đầu</button>
+                <button id="stopButton" class="btn btn-block btn-danger mt-2" style="display: none;">Dừng lại</button>
+            </div>
+        </div>
+
+        <div class="transaction-history mt-4">
+            <h4>Lịch sử giao dịch</h4>
+            <div id="transactionList"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Thêm Pi SDK -->
+    <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+    <script>
+        // Khởi tạo Pi SDK
+        Pi.init({ version: "2.0" });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const walletSeedInput = document.getElementById('walletSeed'); // Placeholder, không dùng cho ví thật
+            const recipientWalletInput = document.getElementById('recipientWallet');
+            const piAmountInput = document.getElementById('piAmount');
+            const delayInput = document.getElementById('delay');
+            const startButton = document.getElementById('startButton');
+            const stopButton = document.getElementById('stopButton');
+            const transactionListDiv = document.getElementById('transactionList');
+
+            let autoPayInterval;
+            let isAutoPayRunning = false;
+
+            function startAutoPay() {
+                if (isAutoPayRunning) return;
+
+                const walletSeed = walletSeedInput.value; // Placeholder, không dùng cho ví thật
+                const recipientWallet = recipientWalletInput.value;
+                const piAmount = parseFloat(piAmountInput.value);
+                const delay = parseFloat(delayInput.value);
+
+                if (!walletSeed || !recipientWallet) { // Placeholder, walletSeed không còn là yếu tố bắt buộc trong ứng dụng Pi App thực tế
+                    alert('Vui lòng nhập đầy đủ thông tin ví (Placeholder).');
+                    return;
+                }
+
+                if (isNaN(piAmount) || piAmount <= 0) {
+                    alert('Số lượng Pi phải lớn hơn 0.');
+                    return;
+                }
+
+                if (isNaN(delay) || delay < 1.2) {
+                    alert('Delay tối thiểu phải từ 1.2 giây trở lên.');
+                    return;
+                }
+
+                isAutoPayRunning = true;
+                startButton.style.display = 'none';
+                stopButton.style.display = 'block';
+
+                autoPayInterval = setInterval(function () {
+                    simulateTransaction(recipientWallet, piAmount);
+                }, delay * 1000); // Convert delay to milliseconds
+
+                addTransactionToHistory('AutoPay started', 'info');
+            }
+
+            function stopAutoPay() {
+                if (!isAutoPayRunning) return;
+
+                isAutoPayRunning = false;
+                clearInterval(autoPayInterval);
+                startButton.style.display = 'block';
+                stopButton.style.display = 'none';
+                addTransactionToHistory('AutoPay stopped', 'info');
+            }
+
+            function simulateTransaction(recipientWallet, piAmount) {
+                const transactionTime = new Date().toLocaleTimeString();
+                const transactionStatus = Math.random() > 0.2 ? 'success' : 'failed'; // Simulate success or failure
+                const statusClass = transactionStatus === 'success' ? 'text-success' : 'text-danger';
+                const statusText = transactionStatus === 'success' ? 'Thành công' : 'Thất bại';
+
+                const transactionDetails = {
+                    time: transactionTime,
+                    recipient: recipientWallet,
+                    amount: piAmount,
+                    status: statusText,
+                    statusClass: statusClass
+                };
+                addTransactionToHistory(`Chuyển ${transactionDetails.amount} Pi tới ví ${transactionDetails.recipient}: <span class="${transactionDetails.statusClass}">${transactionDetails.status}</span>`, transactionDetails.status);
+
+                // --- Nếu bạn muốn tích hợp thanh toán Pi thực sự (User-to-App - U2A) ---
+                // Trong một ứng dụng Pi App thực tế, thay vì mô phỏng giao dịch, bạn sẽ sử dụng Pi SDK để tạo thanh toán thực:
+                // Pi.createPayment({
+                //     amount: piAmount,
+                //     memo: "AutoPay transaction", // Mô tả giao dịch
+                //     metadata: { recipient: recipientWallet } // Metadata tùy chọn
+                // }, {
+                //     onReadyForServerApproval: function(paymentId) {
+                //         // Gửi paymentId đến backend của bạn để phê duyệt phía server
+                //         console.log("Payment ready for server approval:", paymentId);
+                //     },
+                //     onReadyForServerCompletion: function(paymentId, txid) {
+                //         // Gửi paymentId và txid đến backend để hoàn thành giao dịch
+                //         console.log("Payment ready for server completion:", paymentId, txid);
+                //     },
+                //     onCancel: function(paymentId) {
+                //         // Xử lý khi người dùng hủy thanh toán
+                //         console.log("Payment cancelled:", paymentId);
+                //     },
+                //     onError: function(error, payment) {
+                //         // Xử lý lỗi thanh toán
+                //         console.error("Payment error:", error, payment);
+                //     }
+                // });
+                // --- Kết thúc phần tích hợp thanh toán Pi thực sự (U2A) ---
+            }
+
+            function addTransactionToHistory(message, status) {
+                const transactionItem = document.createElement('div');
+                transactionItem.classList.add('transaction-item');
+
+                const timeSpan = document.createElement('span');
+                timeSpan.classList.add('transaction-time');
+                timeSpan.textContent = new Date().toLocaleTimeString() + " - ";
+
+                const messageSpan = document.createElement('span');
+                messageSpan.innerHTML = message;
+
+
+                transactionItem.appendChild(timeSpan);
+                transactionItem.appendChild(messageSpan);
+                transactionListDiv.prepend(transactionItem); // Add to the top of the list
+            }
+
+
+            startButton.addEventListener('click', startAutoPay);
+            stopButton.addEventListener('click', stopAutoPay);
+        });
+
+        // --- Hướng dẫn tích hợp xác thực Pi (nếu cần) ---
+        // Để xác thực người dùng Pi trong ứng dụng Pi App của bạn, bạn có thể sử dụng Pi.authenticate:
+        // Pi.authenticate(['username', 'payments'], function onIncompletePaymentFound(payment) {
+        //     // Xử lý thanh toán chưa hoàn thành (nếu có)
+        //     console.log("Incomplete payment found:", payment);
+        // }).then(function(auth) {
+        //     // Xác thực thành công, bạn có thể truy cập thông tin người dùng qua 'auth'
+        //     console.log("Authentication successful:", auth);
+        //     const accessToken = auth.accessToken;
+        //     const uid = auth.user.uid;
+        //     const username = auth.user.username; // Chỉ có nếu scope 'username' được yêu cầu
+        //     // Gửi accessToken lên backend của bạn để xác minh và sử dụng API Platform
+        // }).catch(function(error) {
+        //     // Xử lý lỗi xác thực
+        //     console.error("Authentication error:", error);
+        // });
+        // --- Kết thúc hướng dẫn tích hợp xác thực Pi ---
+    </script>
+
+</body>
+
+</html>
