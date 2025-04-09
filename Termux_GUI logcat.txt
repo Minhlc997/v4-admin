@@ -1,0 +1,864 @@
+--------- beginning of main
+03-19 23:55:36.969  8066  8066 I libc    : SetHeapTaggingLevel: tag level set to 0
+03-19 23:55:37.010  8066  8066 I m.termux.widget: Using CollectorTypeCC GC.
+03-19 23:55:37.017  8066  8066 E m.termux.widget: Not starting debugger since process cannot load the jdwp agent.
+03-19 23:55:37.023  8066  8066 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+03-19 23:55:37.027  8066  8066 D ActivityThread: setConscryptValidator
+03-19 23:55:37.027  8066  8066 D ActivityThread: setConscryptValidator - put
+03-19 23:55:37.179  8066  8066 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10334; state: DISABLED
+03-19 23:55:37.179  8066  8066 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10334; state: DISABLED
+03-19 23:55:37.199  8066  8066 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+03-19 23:55:37.313  8066  8066 D nativeloader: Configuring clns-4 for other apk /data/app/~~ShCRQaA3-vwikXhykeogtQ==/com.termux.widget-gHaIbYhfcnbb42qVUlrBCg==/base.apk. target_sdk_version=28, uses_libraries=, library_path=/data/app/~~ShCRQaA3-vwikXhykeogtQ==/com.termux.widget-gHaIbYhfcnbb42qVUlrBCg==/lib/arm64:/data/app/~~ShCRQaA3-vwikXhykeogtQ==/com.termux.widget-gHaIbYhfcnbb42qVUlrBCg==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.termux.widget
+03-19 23:55:37.313  8066  8066 D nativeloader: Extending system_exposed_libraries: libPortraitDistortionCorrection.arcsoft.so:libPortraitDistortionCorrectionCali.arcsoft.so:libface_landmark.arcsoft.so:libimage_enhancement.arcsoft.so:liblow_light_hdr.arcsoft.so:libhigh_dynamic_range.arcsoft.so:libFacialAttributeDetection.arcsoft.so:libbinauralrenderer_wrapper.qti.so:libhoaeffects.qti.so:libaudiomirroring_jni.audiomirroring.samsung.so:libBeauty_v4.camera.samsung.so:libexifa.camera.samsung.so:libjpega.camera.samsung.so:libOpenCv.camera.samsung.so:libImageScreener.camera.samsung.so:libMyFilter.camera.samsung.so:libtensorflowLite.myfilter.camera.samsung.so:libtensorflowlite_inference_api.myfilter.camera.samsung.so:libUltraWideDistortionCorrection.camera.samsung.so:libFace_Landmark_API.camera.samsung.so:libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so:libHprFace_GAE_api.camera.samsung.so:libFacialBasedSelfieCorrection.camera.samsung.so:libHprFace_GAE_jni.camera.samsung.so:libcolor_engine.camera.samsung.so:libDLInterface_aidl.camera.samsung.so:libImageTagger.came
+03-19 23:55:37.403  8066  8066 D nativeloader: Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+03-19 23:55:37.425  8066  8066 V GraphicsEnvironment: Currently set values for:
+03-19 23:55:37.425  8066  8066 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+03-19 23:55:37.425  8066  8066 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+03-19 23:55:37.425  8066  8066 V GraphicsEnvironment: ANGLE GameManagerService for com.termux.widget: false
+03-19 23:55:37.426  8066  8066 V GraphicsEnvironment: com.termux.widget is not listed in per-application setting
+03-19 23:55:37.426  8066  8066 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+03-19 23:55:37.495  8066  8066 I TermuxWidgetApplication: AppInit
+03-19 23:55:37.495  8066  8066 D CompatibilityChangeReporter: Compat change id reported: 247079863; UID 10334; state: DISABLED
+03-19 23:55:37.520  8066  8066 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/home/.termux/termux.properties": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/home/.termux/termux.properties": lstat failed: EACCES (Permission denied)
+03-19 23:55:37.522  8066  8066 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/home/.config/termux/termux.properties": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/home/.config/termux/termux.properties": lstat failed: EACCES (Permission denied)
+03-19 23:55:37.522  8066  8066 W TermuxWidget.SharedProperties: Not loading properties since file is null
+03-19 23:55:37.529  8066  8066 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-19 23:55:37.542  8066  8133 I AdrenoGLES-0: QUALCOMM build                   : ec028f8cac, Ic8928a1631
+03-19 23:55:37.542  8066  8133 I AdrenoGLES-0: Build Date                       : 08/23/22
+03-19 23:55:37.542  8066  8133 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.17
+03-19 23:55:37.542  8066  8133 I AdrenoGLES-0: Local Branch                     : 
+03-19 23:55:37.542  8066  8133 I AdrenoGLES-0: Remote Branch                    : 
+03-19 23:55:37.542  8066  8133 I AdrenoGLES-0: Remote Branch                    : 
+03-19 23:55:37.542  8066  8133 I AdrenoGLES-0: Reconstruct Branch               : 
+03-19 23:55:37.542  8066  8133 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch64
+03-19 23:55:37.542  8066  8133 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+03-19 23:55:37.594  8066  8066 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+03-19 23:55:37.595  8066  8133 I AdrenoGLES-0: PFP: 0x016ee197, ME: 0x00000000
+03-19 23:55:37.933  8066  8066 I DecorView: setWindowBackground: isPopOver=false color=ffffffff d=android.graphics.drawable.ColorDrawable@647fb81
+03-19 23:55:38.080  8066  8066 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10334; state: ENABLED
+03-19 23:55:38.090  8066  8066 D ScrollView: initGoToTop
+03-19 23:55:38.315  8066  8066 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10334; state: DISABLED
+03-19 23:55:38.315  8066  8066 D CompatibilityChangeReporter: Compat change id reported: 37756858; UID 10334; state: ENABLED
+03-19 23:55:38.747  8066  8066 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10334; state: DISABLED
+03-19 23:55:38.788  8066  8066 W OpenGLRenderer: Unknown dataspace 0
+03-19 23:55:38.789  8066  8133 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-19 23:55:38.806  8066  8066 I InsetsController: onStateChanged: host=com.termux.widget/com.termux.widget.activities.TermuxWidgetLauncherActivity, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2408), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-19 23:55:38.808  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: synced displayState. AttachInfo displayState=2
+03-19 23:55:38.808  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: setView = com.android.internal.policy.DecorView@8106899 TM=true
+03-19 23:55:38.808  8066  8066 I IDS_TAG : Starting IDS observe window
+03-19 23:55:38.809  8066  8066 I IDS_TAG : Getting Shared Preference for com.termux.widget.TermuxWidgetApplication@3f16fe7 uid = 10334
+03-19 23:55:38.910  8066  8066 I IDS_TAG : App com.termux.widget.TermuxWidgetApplication@3f16fe7 has not finished training
+03-19 23:55:38.914  8066  8066 I IDS_TAG : Closing IDS observe window
+03-19 23:55:38.914  8066  8066 I IDS_TAG : Getting Shared Preference for com.termux.widget.TermuxWidgetApplication@3f16fe7 uid = 10334
+03-19 23:55:38.914  8066  8066 I IDS_TAG : IDS count updated to 4 for com.termux.widget.TermuxWidgetApplication@3f16fe7
+03-19 23:55:39.082  8066  8066 I BufferQueueProducer: [](id:1f8200000000,api:0,p:0,c:8066) setDequeueTimeout:2077252342
+03-19 23:55:39.089  8066  8066 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity] mNativeObject= 0x7015cff900 sc.mNativeObject= 0x708c131000 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-19 23:55:39.089  8066  8066 I BLASTBufferQueue_Java: update, w= 1080 h= 2408 mName = ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity] mNativeObject= 0x7015cff900 sc.mNativeObject= 0x708c131000 format= -1 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-19 23:55:39.090  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: Relayout returned: old=(0,0,1080,2408) new=(0,0,1080,2408) relayoutAsync=false req=(1080,2408)0 dur=33 res=0x403 s={true 0x708c076000} ch=true seqId=0
+03-19 23:55:39.099  8066  8066 D ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: mThreadedRenderer.initialize() mSurface={isValid=true 0x708c076000} hwInitialized=true
+03-19 23:55:39.101  8066  8066 D ScrollView:  onsize change changed 
+03-19 23:55:39.109  8066  8066 D ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-19 23:55:39.116  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: Setup new sync=wmsSync-ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]#0
+03-19 23:55:39.116  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: Creating new active sync group ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]#1
+03-19 23:55:39.139  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: registerCallbacksForSync syncBuffer=false
+03-19 23:55:39.184  8066  8260 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-19 23:55:39.187  8066  8260 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: mWNT: t=0x7015d11300 mBlastBufferQueue=0x7015cff900 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-19 23:55:39.188  8066  8260 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: Setting up sync and frameCommitCallback
+03-19 23:55:39.262  8066  8133 I BLASTBufferQueue: [ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]#0](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-19 23:55:39.263  8066  8133 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-19 23:55:39.280  8066  8133 D OpenGLRenderer: CFMS:: SetUp Pid : 8066    Tid : 8133
+03-19 23:55:39.281  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: reportDrawFinished seqId=0
+03-19 23:55:39.282  8066  8133 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-19 23:55:39.300  8066  8066 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=com.termux.widget/com.termux.widget.activities.TermuxWidgetLauncherActivity
+03-19 23:55:39.300  8066  8066 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=statusBars, host=com.termux.widget/com.termux.widget.activities.TermuxWidgetLauncherActivity
+03-19 23:55:39.334  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: handleWindowFocusChanged: 1 0 call from android.view.ViewRootImpl.-$$Nest$mhandleWindowFocusChanged:0
+03-19 23:55:39.335  8066  8066 D ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0x708c076000}
+03-19 23:55:39.347  8066  8066 D InputMethodManagerUtils: startInputInner - Id : 0
+03-19 23:55:39.347  8066  8066 I InputMethodManager: startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+03-19 23:55:39.459  8066  8066 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/usr": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/usr": lstat failed: EACCES (Permission denied)
+03-19 23:55:39.460  8066  8066 E TermuxWidget.TermuxWidgetProvider: The Termux app $PREFIX directory is not accessible by the Termux:Widget app. This may be because you have not installed or setup Termux app or Termux app and Termux:Widget app both have different APK signatures because you have managed to install both apps from different sources. It may also be because Termux $PREFIX directory "/data/data/com.termux/files/usr" does not exist or does not have read, write and execute permissions. The Termux is required by the Termux:Widget app to run termux commands.
+03-19 23:55:39.460  8066  8066 D InputMethodManagerUtils: startInputInner - Id : 0
+03-19 23:55:39.466  8066  8066 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10334; state: DISABLED
+03-19 23:55:39.490  8066  8066 I Toast   : show: caller = com.termux.shared.logger.Logger.lambda$showToast$0:401 
+03-19 23:55:39.492  8066  8066 I Toast   : show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = false
+03-19 23:55:39.534  8066  8066 I InsetsController: onStateChanged: host=com.termux.widget/com.termux.widget.activities.TermuxWidgetLauncherActivity, from=android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:7209, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2408), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-19 23:55:39.536  8066  8066 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=false, type=ime, host=com.termux.widget/com.termux.widget.activities.TermuxWidgetLauncherActivity
+03-19 23:55:40.535  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:55:40.647  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:55:40.732  8066  8066 V Toast   : HANDLE SHOW: android.widget.Toast$TN@daf9278 mView=null mNextView=java.lang.ref.WeakReference@3321d51
+03-19 23:55:40.748  8066  8066 V ToastPresenter: yOffset = 180
+03-19 23:55:40.753  8066  8066 V ToastPresenter: Text: Uhe  in android.widget.ToastPresenter@eeb59b6
+03-19 23:55:40.753  8066  8066 I WindowManager: WindowManagerGlobal#addView, ty=2005, view=android.widget.LinearLayout{84ed6b7 V.E...... ......I. 0,0-0,0}, caller=android.view.WindowManagerImpl.addView:150 android.widget.ToastPresenter.addToastView:414 android.widget.ToastPresenter.show:335 
+03-19 23:55:40.760  8066  8133 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-19 23:55:40.774  8066  8066 I InsetsController: onStateChanged: host=Toast, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-19 23:55:40.774  8066  8066 I ViewRootImpl@7875e24[Toast]: synced displayState. AttachInfo displayState=2
+03-19 23:55:40.775  8066  8066 I ViewRootImpl@7875e24[Toast]: setView = android.widget.LinearLayout@84ed6b7 TM=true
+03-19 23:55:40.789  8066  8133 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-19 23:55:40.813  8066  8066 I BufferQueueProducer: [](id:1f8200000001,api:0,p:0,c:8066) setDequeueTimeout:2077252342
+03-19 23:55:40.814  8066  8066 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@7875e24[Toast] mNativeObject= 0x7015df2700 sc.mNativeObject= 0x7015dc7780 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-19 23:55:40.814  8066  8066 I BLASTBufferQueue_Java: update, w= 900 h= 853 mName = ViewRootImpl@7875e24[Toast] mNativeObject= 0x7015df2700 sc.mNativeObject= 0x7015dc7780 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-19 23:55:40.814  8066  8066 I ViewRootImpl@7875e24[Toast]: Relayout returned: old=(0,66,1080,2273) new=(90,1240,990,2093) relayoutAsync=false req=(900,853)0 dur=14 res=0x3 s={true 0x708c078800} ch=true seqId=0
+03-19 23:55:40.815  8066  8066 D ViewRootImpl@7875e24[Toast]: mThreadedRenderer.initialize() mSurface={isValid=true 0x708c078800} hwInitialized=true
+03-19 23:55:40.816  8066  8066 D ViewRootImpl@7875e24[Toast]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-19 23:55:40.817  8066  8113 I ViewRootImpl@7875e24[Toast]: Resizing android.view.ViewRootImpl@aee3890: frame = [90,1240][990,2093] reportDraw = true forceLayout = false syncSeqId = -1
+03-19 23:55:40.817  8066  8066 I ViewRootImpl@7875e24[Toast]: Setup new sync=wmsSync-ViewRootImpl@7875e24[Toast]#2
+03-19 23:55:40.817  8066  8066 I ViewRootImpl@7875e24[Toast]: Creating new active sync group ViewRootImpl@7875e24[Toast]#3
+03-19 23:55:40.817  8066  8066 I ViewRootImpl@7875e24[Toast]: registerCallbacksForSync syncBuffer=false
+03-19 23:55:40.821  8066  8261 I ViewRootImpl@7875e24[Toast]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-19 23:55:40.821  8066  8261 I ViewRootImpl@7875e24[Toast]: mWNT: t=0x7015ecdd80 mBlastBufferQueue=0x7015df2700 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-19 23:55:40.822  8066  8261 I ViewRootImpl@7875e24[Toast]: Setting up sync and frameCommitCallback
+03-19 23:55:40.873  8066  8133 I BLASTBufferQueue: [ViewRootImpl@7875e24[Toast]#1](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-19 23:55:40.874  8066  8133 I ViewRootImpl@7875e24[Toast]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-19 23:55:40.887  8066  8133 D OpenGLRenderer: CFMS:: SetUp Pid : 8066    Tid : 8133
+03-19 23:55:40.887  8066  8066 I ViewRootImpl@7875e24[Toast]: reportDrawFinished seqId=0
+03-19 23:55:40.888  8066  8066 I ViewRootImpl@7875e24[Toast]: handleResized, msg = 5 frames=ClientWindowFrames{frame=[90,1240][990,2093] display=[0,66][1080,2273] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
+03-19 23:55:40.888  8066  8066 I ViewRootImpl@7875e24[Toast]: handleResized mSyncSeqId = 0
+03-19 23:55:40.888  8066  8066 D ViewRootImpl@7875e24[Toast]: reportNextDraw android.view.ViewRootImpl.handleResized:2530 android.view.ViewRootImpl.-$$Nest$mhandleResized:0 android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:7197 android.view.ViewRootImpl$ViewRootHandler.handleMessage:7166 android.os.Handler.dispatchMessage:106 
+03-19 23:55:40.895  8066  8066 I ViewRootImpl@7875e24[Toast]: Setup new sync=wmsSync-ViewRootImpl@7875e24[Toast]#4
+03-19 23:55:40.895  8066  8066 I ViewRootImpl@7875e24[Toast]: Creating new active sync group ViewRootImpl@7875e24[Toast]#5
+03-19 23:55:40.896  8066  8066 I ViewRootImpl@7875e24[Toast]: registerCallbacksForSync syncBuffer=false
+03-19 23:55:40.897  8066  8260 I ViewRootImpl@7875e24[Toast]: Received frameDrawingCallback syncResult=0 frameNum=2.
+03-19 23:55:40.897  8066  8260 I ViewRootImpl@7875e24[Toast]: mWNT: t=0x7015ecfa00 mBlastBufferQueue=0x7015df2700 fn= 2 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-19 23:55:40.897  8066  8260 I ViewRootImpl@7875e24[Toast]: Setting up sync and frameCommitCallback
+03-19 23:55:40.897  8066  8133 I ViewRootImpl@7875e24[Toast]: Received frameCommittedCallback lastAttemptedDrawFrameNum=2 didProduceBuffer=false
+03-19 23:55:40.899  8066  8133 I BLASTBufferQueue_Java: gatherPendingTransactions, mName= ViewRootImpl@7875e24[Toast] mNativeObject= 0x7015df2700 frameNumber= 2 caller= android.view.ViewRootImpl$8.lambda$onFrameDraw$1:13914 android.view.ViewRootImpl$8.$r8$lambda$6frSHsGsDhUEo8Wl9hChpniTVZ0:0 android.view.ViewRootImpl$8$$ExternalSyntheticLambda1.onFrameCommit:9 android.view.ThreadedRenderer$1.lambda$onFrameDraw$0:804 android.view.ThreadedRenderer$1$$ExternalSyntheticLambda0.onFrameCommit:2 <bottom of call stack> 
+03-19 23:55:40.899  8066  8066 I ViewRootImpl@7875e24[Toast]: reportDrawFinished seqId=0
+03-19 23:55:43.900  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:43.927  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:43.930  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:43.931  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:43.931  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:44.262  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:44.606  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:44.809  8066  8840 D ProfileInstaller: Installing profile for com.termux.widget
+03-19 23:55:44.864  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:44.889  8066  8066 I WindowManager: WindowManagerGlobal#removeView, ty=2005, view=android.widget.LinearLayout{84ed6b7 V.E...... ........ 0,0-900,853}, caller=android.view.WindowManagerGlobal.removeView:628 android.view.WindowManagerImpl.removeViewImmediate:208 android.widget.ToastPresenter.hide:358 
+03-19 23:55:44.893  8066  8066 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda19@a702753
+03-19 23:55:44.901  8066  8066 I ViewRootImpl@7875e24[Toast]: dispatchDetachedFromWindow
+03-19 23:55:44.922  8066  8066 D InputTransport: Input channel destroyed: 'a787a13', fd=125
+03-19 23:55:45.230  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:45.538  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:48.079  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:48.202  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:48.226  8066  8066 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": lstat failed: EACCES (Permission denied)
+03-19 23:55:48.228  8066  8066 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": lstat failed: EACCES (Permission denied)
+03-19 23:55:48.233  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: Error Code: `200`
+03-19 23:55:48.233  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: Error Message (FileUtils Error):
+03-19 23:55:48.233  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: ```
+03-19 23:55:48.233  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: Creating directory file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts" failed.
+03-19 23:55:48.233  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: ```
+03-19 23:55:48.287  8066  8066 I Toast   : show: caller = com.termux.shared.logger.Logger.lambda$showToast$0:401 
+03-19 23:55:48.288  8066  8066 I Toast   : show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = true
+03-19 23:55:48.393  8066  8085 I m.termux.widget: Background concurrent copying GC freed 5537KB AllocSpace bytes, 8(224KB) LOS objects, 64% free, 3434KB/9578KB, paused 2.874ms,42us total 191.495ms
+03-19 23:55:48.442  8066  8066 I Toast   : show: caller = com.termux.shared.logger.Logger.lambda$showToast$0:401 
+03-19 23:55:48.443  8066  8066 I Toast   : show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = true
+03-19 23:55:50.519  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:50.572  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:50.581  8066  8066 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": lstat failed: EACCES (Permission denied)
+03-19 23:55:50.584  8066  8066 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": lstat failed: EACCES (Permission denied)
+03-19 23:55:50.584  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: Error Code: `200`
+03-19 23:55:50.584  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: Error Message (FileUtils Error):
+03-19 23:55:50.584  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: ```
+03-19 23:55:50.584  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: Creating directory file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts" failed.
+03-19 23:55:50.584  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: ```
+03-19 23:55:50.609  8066  8066 I Toast   : show: caller = com.termux.shared.logger.Logger.lambda$showToast$0:401 
+03-19 23:55:50.611  8066  8066 I Toast   : show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = true
+03-19 23:55:50.649  8066  8066 I Toast   : show: caller = com.termux.shared.logger.Logger.lambda$showToast$0:401 
+03-19 23:55:50.650  8066  8066 I Toast   : show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = true
+03-19 23:55:51.226  8066  8066 V Toast   : HANDLE SHOW: android.widget.Toast$TN@babcb33 mView=null mNextView=java.lang.ref.WeakReference@c813ef0
+03-19 23:55:51.293  8066  8066 V ToastPresenter: yOffset = 180
+03-19 23:55:51.293  8066  8066 V ToastPresenter: Text: Frro in android.widget.ToastPresenter@1d51c69
+03-19 23:55:51.293  8066  8066 I WindowManager: WindowManagerGlobal#addView, ty=2005, view=android.widget.LinearLayout{89b46ee V.E...... ......I. 0,0-0,0}, caller=android.view.WindowManagerImpl.addView:150 android.widget.ToastPresenter.addToastView:414 android.widget.ToastPresenter.show:335 
+03-19 23:55:51.297  8066  8133 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-19 23:55:51.314  8066  8066 I InsetsController: onStateChanged: host=Toast, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-19 23:55:51.315  8066  8066 I ViewRootImpl@3cde78f[Toast]: synced displayState. AttachInfo displayState=2
+03-19 23:55:51.315  8066  8066 I ViewRootImpl@3cde78f[Toast]: setView = android.widget.LinearLayout@89b46ee TM=true
+03-19 23:55:51.318  8066  8133 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-19 23:55:51.347  8066  8066 I BufferQueueProducer: [](id:1f8200000002,api:0,p:-1,c:8066) setDequeueTimeout:2077252342
+03-19 23:55:51.348  8066  8066 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@3cde78f[Toast] mNativeObject= 0x7015df2a00 sc.mNativeObject= 0x708c09a480 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-19 23:55:51.348  8066  8066 I BLASTBufferQueue_Java: update, w= 900 h= 482 mName = ViewRootImpl@3cde78f[Toast] mNativeObject= 0x7015df2a00 sc.mNativeObject= 0x708c09a480 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-19 23:55:51.349  8066  8066 I ViewRootImpl@3cde78f[Toast]: Relayout returned: old=(0,66,1080,2273) new=(90,1611,990,2093) relayoutAsync=false req=(900,482)0 dur=8 res=0x3 s={true 0x708c078800} ch=true seqId=0
+03-19 23:55:51.350  8066  8066 D ViewRootImpl@3cde78f[Toast]: mThreadedRenderer.initialize() mSurface={isValid=true 0x708c078800} hwInitialized=true
+03-19 23:55:51.353  8066  8066 D ViewRootImpl@3cde78f[Toast]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-19 23:55:51.353  8066  8066 I ViewRootImpl@3cde78f[Toast]: Setup new sync=wmsSync-ViewRootImpl@3cde78f[Toast]#6
+03-19 23:55:51.353  8066  8066 I ViewRootImpl@3cde78f[Toast]: Creating new active sync group ViewRootImpl@3cde78f[Toast]#7
+03-19 23:55:51.356  8066  8066 I ViewRootImpl@3cde78f[Toast]: registerCallbacksForSync syncBuffer=false
+03-19 23:55:51.358  8066  8261 I ViewRootImpl@3cde78f[Toast]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-19 23:55:51.358  8066  8261 I ViewRootImpl@3cde78f[Toast]: mWNT: t=0x7070e9b180 mBlastBufferQueue=0x7015df2a00 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-19 23:55:51.358  8066  8261 I ViewRootImpl@3cde78f[Toast]: Setting up sync and frameCommitCallback
+03-19 23:55:51.364  8066  8133 I BLASTBufferQueue: [ViewRootImpl@3cde78f[Toast]#2](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-19 23:55:51.365  8066  8133 I ViewRootImpl@3cde78f[Toast]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-19 23:55:51.368  8066  8133 D OpenGLRenderer: CFMS:: SetUp Pid : 8066    Tid : 8133
+03-19 23:55:51.368  8066  8066 I ViewRootImpl@3cde78f[Toast]: reportDrawFinished seqId=0
+03-19 23:55:51.611  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:51.698  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:51.706  8066  8066 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": lstat failed: EACCES (Permission denied)
+03-19 23:55:51.713  8066  8066 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": lstat failed: EACCES (Permission denied)
+03-19 23:55:51.713  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: Error Code: `200`
+03-19 23:55:51.713  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: Error Message (FileUtils Error):
+03-19 23:55:51.713  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: ```
+03-19 23:55:51.713  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: Creating directory file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts" failed.
+03-19 23:55:51.713  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: ```
+03-19 23:55:51.723  8066  8066 I Toast   : show: caller = com.termux.shared.logger.Logger.lambda$showToast$0:401 
+03-19 23:55:51.723  8066  8066 I Toast   : show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = true
+03-19 23:55:51.743  8066  8066 I Toast   : show: caller = com.termux.shared.logger.Logger.lambda$showToast$0:401 
+03-19 23:55:51.745  8066  8066 I Toast   : show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = true
+03-19 23:55:52.802  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:55:52.803  8066  8066 I ViewRootImpl@3cde78f[Toast]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:55:53.360  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:53.397  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:55:53.397  8066  8066 I ViewRootImpl@3cde78f[Toast]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:55:53.461  8066  8066 W Choreographer: Frame time is 0.116219 ms in the future!  Check that graphics HAL is generating vsync timestamps using the correct timebase.
+03-19 23:55:53.551  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:53.837  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:53.925  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:54.981  8066  8066 I WindowManager: WindowManagerGlobal#removeView, ty=2005, view=android.widget.LinearLayout{89b46ee V.E...... ........ 0,0-900,482}, caller=android.view.WindowManagerGlobal.removeView:628 android.view.WindowManagerImpl.removeViewImmediate:208 android.widget.ToastPresenter.hide:358 
+03-19 23:55:54.982  8066  8066 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda19@e78e3fa
+03-19 23:55:54.984  8066  8066 I ViewRootImpl@3cde78f[Toast]: dispatchDetachedFromWindow
+03-19 23:55:55.018  8066  8066 D InputTransport: Input channel destroyed: 'f2f6a92', fd=119
+03-19 23:55:55.085  8066  8066 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/usr": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/usr": lstat failed: EACCES (Permission denied)
+03-19 23:55:55.085  8066  8066 E TermuxWidget.TermuxWidgetProvider: The Termux app $PREFIX directory is not accessible by the Termux:Widget app. This may be because you have not installed or setup Termux app or Termux app and Termux:Widget app both have different APK signatures because you have managed to install both apps from different sources. It may also be because Termux $PREFIX directory "/data/data/com.termux/files/usr" does not exist or does not have read, write and execute permissions. The Termux is required by the Termux:Widget app to run termux commands.
+03-19 23:55:55.087  8066  8066 V Toast   : HANDLE SHOW: android.widget.Toast$TN@956f550 mView=null mNextView=java.lang.ref.WeakReference@4a50349
+03-19 23:55:55.095  8066  8066 V ToastPresenter: yOffset = 180
+03-19 23:55:55.096  8066  8066 V ToastPresenter: Text: Oo s in android.widget.ToastPresenter@4b8d44e
+03-19 23:55:55.109  8066  8066 I WindowManager: WindowManagerGlobal#addView, ty=2005, view=android.widget.LinearLayout{5b6596f V.E...... ......I. 0,0-0,0}, caller=android.view.WindowManagerImpl.addView:150 android.widget.ToastPresenter.addToastView:414 android.widget.ToastPresenter.show:335 
+03-19 23:55:55.125  8066  8133 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-19 23:55:55.141  8066  8066 I InsetsController: onStateChanged: host=Toast, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-19 23:55:55.142  8066  8066 I ViewRootImpl@8be167c[Toast]: synced displayState. AttachInfo displayState=2
+03-19 23:55:55.142  8066  8066 I ViewRootImpl@8be167c[Toast]: setView = android.widget.LinearLayout@5b6596f TM=true
+03-19 23:55:55.157  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:55:55.176  8066  8066 I BufferQueueProducer: [](id:1f8200000003,api:0,p:-1,c:8066) setDequeueTimeout:2077252342
+03-19 23:55:55.177  8066  8066 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@8be167c[Toast] mNativeObject= 0x7015df1500 sc.mNativeObject= 0x708c09c100 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-19 23:55:55.177  8066  8066 I BLASTBufferQueue_Java: update, w= 900 h= 164 mName = ViewRootImpl@8be167c[Toast] mNativeObject= 0x7015df1500 sc.mNativeObject= 0x708c09c100 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-19 23:55:55.177  8066  8066 I ViewRootImpl@8be167c[Toast]: Relayout returned: old=(0,66,1080,2273) new=(90,1929,990,2093) relayoutAsync=false req=(900,164)0 dur=14 res=0x3 s={true 0x708c078800} ch=true seqId=0
+03-19 23:55:55.179  8066  8066 D ViewRootImpl@8be167c[Toast]: mThreadedRenderer.initialize() mSurface={isValid=true 0x708c078800} hwInitialized=true
+03-19 23:55:55.183  8066  8066 D ViewRootImpl@8be167c[Toast]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-19 23:55:55.183  8066  8066 I ViewRootImpl@8be167c[Toast]: Setup new sync=wmsSync-ViewRootImpl@8be167c[Toast]#8
+03-19 23:55:55.183  8066  8066 I ViewRootImpl@8be167c[Toast]: Creating new active sync group ViewRootImpl@8be167c[Toast]#9
+03-19 23:55:55.184  8066  8066 I ViewRootImpl@8be167c[Toast]: registerCallbacksForSync syncBuffer=false
+03-19 23:55:55.185  8066  8260 I ViewRootImpl@8be167c[Toast]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-19 23:55:55.186  8066  8260 I ViewRootImpl@8be167c[Toast]: mWNT: t=0x708c091300 mBlastBufferQueue=0x7015df1500 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-19 23:55:55.186  8066  8260 I ViewRootImpl@8be167c[Toast]: Setting up sync and frameCommitCallback
+03-19 23:55:55.190  8066  8133 I BLASTBufferQueue: [ViewRootImpl@8be167c[Toast]#3](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-19 23:55:55.192  8066  8133 I ViewRootImpl@8be167c[Toast]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-19 23:55:55.195  8066  8133 D OpenGLRenderer: CFMS:: SetUp Pid : 8066    Tid : 8133
+03-19 23:55:55.195  8066  8066 I ViewRootImpl@8be167c[Toast]: reportDrawFinished seqId=0
+03-19 23:55:55.196  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:55:55.219  8066  8066 I Toast   : show: caller = com.termux.shared.logger.Logger.lambda$showToast$0:401 
+03-19 23:55:55.223  8066  8066 I Toast   : show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = false
+03-19 23:55:55.342  8066  8133 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-19 23:55:55.902  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:56.179  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:56.521  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:56.797  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:58.235  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:55:58.334  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:55:58.492  8066  8066 I WindowManager: WindowManagerGlobal#removeView, ty=2005, view=android.widget.LinearLayout{5b6596f V.E...... ........ 0,0-900,164}, caller=android.view.WindowManagerGlobal.removeView:628 android.view.WindowManagerImpl.removeViewImmediate:208 android.widget.ToastPresenter.hide:358 
+03-19 23:55:58.492  8066  8066 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda19@8791d8b
+03-19 23:55:58.495  8066  8066 I ViewRootImpl@8be167c[Toast]: dispatchDetachedFromWindow
+03-19 23:55:58.510  8066  8066 D InputTransport: Input channel destroyed: 'df75058', fd=141
+03-19 23:55:58.543  8066  8066 V Toast   : HANDLE SHOW: android.widget.Toast$TN@7bff198 mView=null mNextView=java.lang.ref.WeakReference@be65df1
+03-19 23:55:58.547  8066  8066 V ToastPresenter: yOffset = 180
+03-19 23:55:58.547  8066  8066 V ToastPresenter: Text: Frro in android.widget.ToastPresenter@b1b9dd6
+03-19 23:55:58.547  8066  8066 I WindowManager: WindowManagerGlobal#addView, ty=2005, view=android.widget.LinearLayout{e5d9857 V.E...... ......I. 0,0-0,0}, caller=android.view.WindowManagerImpl.addView:150 android.widget.ToastPresenter.addToastView:414 android.widget.ToastPresenter.show:335 
+03-19 23:55:58.550  8066  8133 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-19 23:55:58.581  8066  8066 I InsetsController: onStateChanged: host=Toast, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-19 23:55:58.582  8066  8066 I ViewRootImpl@c8e8f44[Toast]: synced displayState. AttachInfo displayState=2
+03-19 23:55:58.582  8066  8066 I ViewRootImpl@c8e8f44[Toast]: setView = android.widget.LinearLayout@e5d9857 TM=true
+03-19 23:55:58.583  8066  8133 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-19 23:55:58.617  8066  8066 I BufferQueueProducer: [](id:1f8200000004,api:0,p:-1,c:8066) setDequeueTimeout:2077252342
+03-19 23:55:58.619  8066  8066 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@c8e8f44[Toast] mNativeObject= 0x7015df1b00 sc.mNativeObject= 0x708c09a300 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-19 23:55:58.619  8066  8066 I BLASTBufferQueue_Java: update, w= 900 h= 482 mName = ViewRootImpl@c8e8f44[Toast] mNativeObject= 0x7015df1b00 sc.mNativeObject= 0x708c09a300 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-19 23:55:58.620  8066  8066 I ViewRootImpl@c8e8f44[Toast]: Relayout returned: old=(0,66,1080,2273) new=(90,1611,990,2093) relayoutAsync=false req=(900,482)0 dur=29 res=0x3 s={true 0x708c078800} ch=true seqId=0
+03-19 23:55:58.621  8066  8066 D ViewRootImpl@c8e8f44[Toast]: mThreadedRenderer.initialize() mSurface={isValid=true 0x708c078800} hwInitialized=true
+03-19 23:55:58.675  8066  8066 D ViewRootImpl@c8e8f44[Toast]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-19 23:55:58.675  8066  8066 I ViewRootImpl@c8e8f44[Toast]: Setup new sync=wmsSync-ViewRootImpl@c8e8f44[Toast]#10
+03-19 23:55:58.675  8066  8066 I ViewRootImpl@c8e8f44[Toast]: Creating new active sync group ViewRootImpl@c8e8f44[Toast]#11
+03-19 23:55:58.675  8066  8066 I ViewRootImpl@c8e8f44[Toast]: registerCallbacksForSync syncBuffer=false
+03-19 23:55:58.679  8066  8261 I ViewRootImpl@c8e8f44[Toast]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-19 23:55:58.679  8066  8261 I ViewRootImpl@c8e8f44[Toast]: mWNT: t=0x708c092c80 mBlastBufferQueue=0x7015df1b00 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-19 23:55:58.679  8066  8261 I ViewRootImpl@c8e8f44[Toast]: Setting up sync and frameCommitCallback
+03-19 23:55:58.680  8066  8133 I BLASTBufferQueue: [ViewRootImpl@c8e8f44[Toast]#4](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-19 23:55:58.681  8066  8133 I ViewRootImpl@c8e8f44[Toast]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-19 23:55:58.691  8066  8133 D OpenGLRenderer: CFMS:: SetUp Pid : 8066    Tid : 8133
+03-19 23:55:58.691  8066  8066 I ViewRootImpl@c8e8f44[Toast]: reportDrawFinished seqId=0
+03-19 23:56:00.558  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:56:00.558  8066  8066 I ViewRootImpl@c8e8f44[Toast]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:56:00.659  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:56:00.685  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:56:00.685  8066  8066 I ViewRootImpl@c8e8f44[Toast]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:56:00.702  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:56:00.711  8066  8066 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": lstat failed: EACCES (Permission denied)
+03-19 23:56:00.714  8066  8066 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts": lstat failed: EACCES (Permission denied)
+03-19 23:56:00.716  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: Error Code: `200`
+03-19 23:56:00.716  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: Error Message (FileUtils Error):
+03-19 23:56:00.716  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: ```
+03-19 23:56:00.716  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: Creating directory file at path "/data/data/com.termux/files/home/.termux/widget/dynamic_shortcuts" failed.
+03-19 23:56:00.716  8066  8066 E TermuxWidget.TermuxWidgetMainActivity: ```
+03-19 23:56:00.737  8066  8066 I Toast   : show: caller = com.termux.shared.logger.Logger.lambda$showToast$0:401 
+03-19 23:56:00.738  8066  8066 I Toast   : show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = true
+03-19 23:56:00.756  8066  8066 I Toast   : show: caller = com.termux.shared.logger.Logger.lambda$showToast$0:401 
+03-19 23:56:00.757  8066  8066 I Toast   : show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = true
+03-19 23:56:01.995  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:56:02.044  8066  8066 I WindowManager: WindowManagerGlobal#removeView, ty=2005, view=android.widget.LinearLayout{e5d9857 V.E...... ........ 0,0-900,482}, caller=android.view.WindowManagerGlobal.removeView:628 android.view.WindowManagerImpl.removeViewImmediate:208 android.widget.ToastPresenter.hide:358 
+03-19 23:56:02.044  8066  8066 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda19@d3962f3
+03-19 23:56:02.046  8066  8066 I ViewRootImpl@c8e8f44[Toast]: dispatchDetachedFromWindow
+03-19 23:56:02.080  8066  8066 D InputTransport: Input channel destroyed: '5be96a2', fd=112
+03-19 23:56:02.082  8066  8066 V Toast   : HANDLE SHOW: android.widget.Toast$TN@29f4547 mView=null mNextView=java.lang.ref.WeakReference@d65174
+03-19 23:56:02.100  8066  8066 V ToastPresenter: yOffset = 180
+03-19 23:56:02.100  8066  8066 V ToastPresenter: Text: Oo s in android.widget.ToastPresenter@bca369d
+03-19 23:56:02.100  8066  8066 I WindowManager: WindowManagerGlobal#addView, ty=2005, view=android.widget.LinearLayout{c2b4712 V.E...... ......I. 0,0-0,0}, caller=android.view.WindowManagerImpl.addView:150 android.widget.ToastPresenter.addToastView:414 android.widget.ToastPresenter.show:335 
+03-19 23:56:02.117  8066  8133 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-19 23:56:02.139  8066  8066 I InsetsController: onStateChanged: host=Toast, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-19 23:56:02.139  8066  8066 I ViewRootImpl@800eee3[Toast]: synced displayState. AttachInfo displayState=2
+03-19 23:56:02.140  8066  8066 I ViewRootImpl@800eee3[Toast]: setView = android.widget.LinearLayout@c2b4712 TM=true
+03-19 23:56:02.141  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:56:02.161  8066  8066 I BufferQueueProducer: [](id:1f8200000005,api:0,p:-1,c:8066) setDequeueTimeout:2077252342
+03-19 23:56:02.162  8066  8066 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@800eee3[Toast] mNativeObject= 0x7015eb9000 sc.mNativeObject= 0x708c0a7980 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-19 23:56:02.162  8066  8066 I BLASTBufferQueue_Java: update, w= 900 h= 164 mName = ViewRootImpl@800eee3[Toast] mNativeObject= 0x7015eb9000 sc.mNativeObject= 0x708c0a7980 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-19 23:56:02.163  8066  8066 I ViewRootImpl@800eee3[Toast]: Relayout returned: old=(0,66,1080,2273) new=(90,1929,990,2093) relayoutAsync=false req=(900,164)0 dur=15 res=0x3 s={true 0x708c078800} ch=true seqId=0
+03-19 23:56:02.163  8066  8066 D ViewRootImpl@800eee3[Toast]: mThreadedRenderer.initialize() mSurface={isValid=true 0x708c078800} hwInitialized=true
+03-19 23:56:02.164  8066  8066 D ViewRootImpl@800eee3[Toast]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-19 23:56:02.165  8066  8066 I ViewRootImpl@800eee3[Toast]: Setup new sync=wmsSync-ViewRootImpl@800eee3[Toast]#12
+03-19 23:56:02.165  8066  8066 I ViewRootImpl@800eee3[Toast]: Creating new active sync group ViewRootImpl@800eee3[Toast]#13
+03-19 23:56:02.165  8066  8066 I ViewRootImpl@800eee3[Toast]: registerCallbacksForSync syncBuffer=false
+03-19 23:56:02.167  8066  8260 I ViewRootImpl@800eee3[Toast]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-19 23:56:02.167  8066  8260 I ViewRootImpl@800eee3[Toast]: mWNT: t=0x708c093e80 mBlastBufferQueue=0x7015eb9000 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-19 23:56:02.167  8066  8260 I ViewRootImpl@800eee3[Toast]: Setting up sync and frameCommitCallback
+03-19 23:56:02.169  8066  8133 I BLASTBufferQueue: [ViewRootImpl@800eee3[Toast]#5](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-19 23:56:02.170  8066  8133 I ViewRootImpl@800eee3[Toast]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-19 23:56:02.171  8066  8133 D OpenGLRenderer: CFMS:: SetUp Pid : 8066    Tid : 8133
+03-19 23:56:02.171  8066  8066 I ViewRootImpl@800eee3[Toast]: reportDrawFinished seqId=0
+03-19 23:56:02.179  8066  8133 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-19 23:56:02.608  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 0
+03-19 23:56:02.879  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme pointer 1
+03-19 23:56:03.741  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme key 0
+--------- beginning of system
+03-19 23:56:03.744  8066  8066 D Activity: onKeyDown(KEYCODE_BACK)
+03-19 23:56:03.747  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: ViewPostIme key 1
+03-19 23:56:03.747  8066  8066 D Activity: onKeyUp(KEYCODE_BACK) isTracking()=true isCanceled()=false hasCallback=false
+03-19 23:56:03.748  8066  8066 D Activity: onBackPressed
+03-19 23:56:04.196  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: handleWindowFocusChanged: 0 0 call from android.view.ViewRootImpl.-$$Nest$mhandleWindowFocusChanged:0
+03-19 23:56:04.197  8066  8066 I ImeFocusController: onPreWindowFocus: skipped, hasWindowFocus=false mHasImeFocus=true
+03-19 23:56:04.204  8066  8066 I ImeFocusController: onPostWindowFocus: skipped, hasWindowFocus=false mHasImeFocus=true
+03-19 23:56:04.890  8066  8091 I ViewRootImpl@800eee3[Toast]: Resizing android.view.ViewRootImpl@c141bf8: frame = [90,1929][990,2093] reportDraw = false forceLayout = false syncSeqId = -1
+03-19 23:56:04.931  8066  8066 D InputTransport: Input channel destroyed: 'ClientS', fd=120
+03-19 23:56:04.934  8066  8066 I ViewRootImpl@800eee3[Toast]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[90,1929][990,2093] display=[0,66][1080,2273] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
+03-19 23:56:05.069  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: handleAppVisibility mAppVisible = true visible = false
+03-19 23:56:05.075  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: destroyHardwareResources: Callers=android.view.ViewRootImpl.performTraversals:3932 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 android.os.Handler.handleCallback:958 android.os.Handler.dispatchMessage:99 
+03-19 23:56:05.111  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: Relayout returned: old=(0,0,1080,2408) new=(0,0,1080,2408) relayoutAsync=false req=(1080,2408)8 dur=23 res=0x402 s={false 0x0} ch=true seqId=0
+03-19 23:56:05.114  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: stopped(true) old = false
+03-19 23:56:05.114  8066  8066 D ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: WindowStopped on com.termux.widget/com.termux.widget.activities.TermuxWidgetLauncherActivity set to true
+03-19 23:56:05.302  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: Relayout returned: old=(0,0,1080,2408) new=(0,0,1080,2408) relayoutAsync=false req=(1080,2408)8 dur=71 res=0x402 s={false 0x0} ch=false seqId=0
+03-19 23:56:05.309  8066  8133 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-19 23:56:05.713  8066  8066 I WindowManager: WindowManagerGlobal#removeView, ty=2005, view=android.widget.LinearLayout{c2b4712 V.E...... ........ 0,0-900,164}, caller=android.view.WindowManagerGlobal.removeView:628 android.view.WindowManagerImpl.removeViewImmediate:208 android.widget.ToastPresenter.hide:358 
+03-19 23:56:05.713  8066  8066 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda19@3f2c25e
+03-19 23:56:05.715  8066  8133 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-19 23:56:05.715  8066  8066 I ViewRootImpl@800eee3[Toast]: dispatchDetachedFromWindow
+03-19 23:56:05.743  8066  8066 D InputTransport: Input channel destroyed: 'cfabb5 ', fd=118
+03-19 23:56:05.746  8066  8066 V Toast   : HANDLE SHOW: android.widget.Toast$TN@56affa4 mView=null mNextView=java.lang.ref.WeakReference@54b010d
+03-19 23:56:05.759  8066  8066 V ToastPresenter: yOffset = 180
+03-19 23:56:05.759  8066  8066 V ToastPresenter: Text: Frro in android.widget.ToastPresenter@84f98c2
+03-19 23:56:05.783  8066  8066 I WindowManager: WindowManagerGlobal#addView, ty=2005, view=android.widget.LinearLayout{27b56d3 V.E...... ......I. 0,0-0,0}, caller=android.view.WindowManagerImpl.addView:150 android.widget.ToastPresenter.addToastView:414 android.widget.ToastPresenter.show:335 
+03-19 23:56:05.795  8066  8133 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-19 23:56:05.810  8066  8066 I InsetsController: onStateChanged: host=Toast, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-19 23:56:05.810  8066  8066 I ViewRootImpl@d2a7210[Toast]: synced displayState. AttachInfo displayState=2
+03-19 23:56:05.811  8066  8066 I ViewRootImpl@d2a7210[Toast]: setView = android.widget.LinearLayout@27b56d3 TM=true
+03-19 23:56:05.858  8066  8066 I BufferQueueProducer: [](id:1f8200000006,api:0,p:-1,c:8066) setDequeueTimeout:2077252342
+03-19 23:56:05.859  8066  8066 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@d2a7210[Toast] mNativeObject= 0x7015cff900 sc.mNativeObject= 0x708c0a8280 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-19 23:56:05.859  8066  8066 I BLASTBufferQueue_Java: update, w= 900 h= 482 mName = ViewRootImpl@d2a7210[Toast] mNativeObject= 0x7015cff900 sc.mNativeObject= 0x708c0a8280 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-19 23:56:05.861  8066  8066 I ViewRootImpl@d2a7210[Toast]: Relayout returned: old=(0,66,1080,2273) new=(90,1611,990,2093) relayoutAsync=false req=(900,482)0 dur=15 res=0x3 s={true 0x708c078800} ch=true seqId=0
+03-19 23:56:05.861  8066  8066 D ViewRootImpl@d2a7210[Toast]: mThreadedRenderer.initialize() mSurface={isValid=true 0x708c078800} hwInitialized=true
+03-19 23:56:05.872  8066  8066 D ViewRootImpl@d2a7210[Toast]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-19 23:56:05.872  8066  8066 I ViewRootImpl@d2a7210[Toast]: Setup new sync=wmsSync-ViewRootImpl@d2a7210[Toast]#14
+03-19 23:56:05.872  8066  8066 I ViewRootImpl@d2a7210[Toast]: Creating new active sync group ViewRootImpl@d2a7210[Toast]#15
+03-19 23:56:05.874  8066  8066 I ViewRootImpl@d2a7210[Toast]: registerCallbacksForSync syncBuffer=false
+03-19 23:56:05.879  8066  8261 I ViewRootImpl@d2a7210[Toast]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-19 23:56:05.879  8066  8261 I ViewRootImpl@d2a7210[Toast]: mWNT: t=0x7015e57500 mBlastBufferQueue=0x7015cff900 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-19 23:56:05.879  8066  8261 I ViewRootImpl@d2a7210[Toast]: Setting up sync and frameCommitCallback
+03-19 23:56:05.880  8066  8133 I BLASTBufferQueue: [ViewRootImpl@d2a7210[Toast]#6](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-19 23:56:05.881  8066  8133 I ViewRootImpl@d2a7210[Toast]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-19 23:56:05.883  8066  8133 D OpenGLRenderer: CFMS:: SetUp Pid : 8066    Tid : 8133
+03-19 23:56:05.884  8066  8066 I ViewRootImpl@d2a7210[Toast]: reportDrawFinished seqId=0
+03-19 23:56:05.897  8066  8133 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-19 23:56:09.002 11126 11126 I com.termux.gui: Using CollectorTypeCC GC.
+03-19 23:56:09.030 11126 11126 E com.termux.gui: Not starting debugger since process cannot load the jdwp agent.
+03-19 23:56:09.035 11126 11126 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+03-19 23:56:09.039 11126 11126 D ActivityThread: setConscryptValidator
+03-19 23:56:09.039 11126 11126 D ActivityThread: setConscryptValidator - put
+03-19 23:56:09.217 11126 11126 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10334; state: ENABLED
+03-19 23:56:09.218 11126 11126 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10334; state: DISABLED
+03-19 23:56:09.278 11126 11126 D nativeloader: Configuring clns-4 for other apk /data/app/~~jrndrzDWykObDlbFfKLykA==/com.termux.gui-Y2h12HAWoF1EPiwsQdxmjw==/base.apk. target_sdk_version=33, uses_libraries=, library_path=/data/app/~~jrndrzDWykObDlbFfKLykA==/com.termux.gui-Y2h12HAWoF1EPiwsQdxmjw==/lib/arm64:/data/app/~~jrndrzDWykObDlbFfKLykA==/com.termux.gui-Y2h12HAWoF1EPiwsQdxmjw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.termux.gui
+03-19 23:56:09.300 11126 11126 D nativeloader: Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+03-19 23:56:09.309  8066  8066 I WindowManager: WindowManagerGlobal#removeView, ty=2005, view=android.widget.LinearLayout{27b56d3 V.E...... ........ 0,0-900,482}, caller=android.view.WindowManagerGlobal.removeView:628 android.view.WindowManagerImpl.removeViewImmediate:208 android.widget.ToastPresenter.hide:358 
+03-19 23:56:09.310 11126 11126 V GraphicsEnvironment: Currently set values for:
+03-19 23:56:09.310 11126 11126 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+03-19 23:56:09.310 11126 11126 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+03-19 23:56:09.311 11126 11126 V GraphicsEnvironment: ANGLE GameManagerService for com.termux.gui: false
+03-19 23:56:09.311 11126 11126 V GraphicsEnvironment: com.termux.gui is not listed in per-application setting
+03-19 23:56:09.311 11126 11126 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+03-19 23:56:09.313  8066  8066 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda19@39a8d2f
+03-19 23:56:09.352  8066  8133 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-19 23:56:09.353  8066  8066 I ViewRootImpl@d2a7210[Toast]: dispatchDetachedFromWindow
+03-19 23:56:09.468  8066  8066 D InputTransport: Input channel destroyed: '864f240', fd=104
+03-19 23:56:09.507  8066  8066 V Toast   : HANDLE SHOW: android.widget.Toast$TN@cccd4b mView=null mNextView=java.lang.ref.WeakReference@c27328
+03-19 23:56:09.578  8066  8066 V ToastPresenter: yOffset = 180
+03-19 23:56:09.578  8066  8066 V ToastPresenter: Text: Uhe  in android.widget.ToastPresenter@ad16841
+03-19 23:56:09.579  8066  8066 I WindowManager: WindowManagerGlobal#addView, ty=2005, view=android.widget.LinearLayout{c3361e6 V.E...... ......I. 0,0-0,0}, caller=android.view.WindowManagerImpl.addView:150 android.widget.ToastPresenter.addToastView:414 android.widget.ToastPresenter.show:335 
+03-19 23:56:09.601  8066  8133 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-19 23:56:09.641  8066  8066 I InsetsController: onStateChanged: host=Toast, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-19 23:56:09.642  8066  8066 I ViewRootImpl@798f327[Toast]: synced displayState. AttachInfo displayState=2
+03-19 23:56:09.643  8066  8066 I ViewRootImpl@798f327[Toast]: setView = android.widget.LinearLayout@c3361e6 TM=true
+03-19 23:56:10.065 11126 11126 I EngineFactory: Provider GmsCore_OpenSSL not available
+03-19 23:56:10.111 11126 11126 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-19 23:56:10.173 11126 11210 I AdrenoGLES-0: QUALCOMM build                   : ec028f8cac, Ic8928a1631
+03-19 23:56:10.173 11126 11210 I AdrenoGLES-0: Build Date                       : 08/23/22
+03-19 23:56:10.173 11126 11210 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.17
+03-19 23:56:10.173 11126 11210 I AdrenoGLES-0: Local Branch                     : 
+03-19 23:56:10.173 11126 11210 I AdrenoGLES-0: Remote Branch                    : 
+03-19 23:56:10.173 11126 11210 I AdrenoGLES-0: Remote Branch                    : 
+03-19 23:56:10.173 11126 11210 I AdrenoGLES-0: Reconstruct Branch               : 
+03-19 23:56:10.173 11126 11210 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch64
+03-19 23:56:10.173 11126 11210 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+03-19 23:56:10.214  8066  8066 I Choreographer: Skipped 75 frames!  The application may be doing too much work on its main thread.
+03-19 23:56:10.238 11126 11126 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10334; state: ENABLED
+03-19 23:56:10.250 11126 11126 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10334; state: ENABLED
+03-19 23:56:10.280  8066  8504 I ViewRootImpl@798f327[Toast]: Resizing android.view.ViewRootImpl@d179ac3: frame = [90,1240][990,2093] reportDraw = true forceLayout = false syncSeqId = -1
+03-19 23:56:10.342 11126 11210 I AdrenoGLES-0: PFP: 0x016ee197, ME: 0x00000000
+03-19 23:56:10.396  8066  8066 I BufferQueueProducer: [](id:1f8200000007,api:0,p:-1,c:8066) setDequeueTimeout:2077252342
+03-19 23:56:10.396  8066  8066 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@798f327[Toast] mNativeObject= 0x7015eb9300 sc.mNativeObject= 0x708c0a84c0 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-19 23:56:10.397  8066  8066 I BLASTBufferQueue_Java: update, w= 900 h= 853 mName = ViewRootImpl@798f327[Toast] mNativeObject= 0x7015eb9300 sc.mNativeObject= 0x708c0a84c0 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-19 23:56:10.398  8066  8066 I ViewRootImpl@798f327[Toast]: Relayout returned: old=(0,66,1080,2273) new=(90,1240,990,2093) relayoutAsync=false req=(900,853)0 dur=136 res=0x3 s={true 0x708c078800} ch=true seqId=0
+03-19 23:56:10.399  8066  8066 D ViewRootImpl@798f327[Toast]: mThreadedRenderer.initialize() mSurface={isValid=true 0x708c078800} hwInitialized=true
+03-19 23:56:10.430 11126 11126 I InputMethodManager: invalidateInput
+03-19 23:56:10.431 11126 11126 I InputMethodManager: invalidateInput
+03-19 23:56:10.432 11126 11126 I InputMethodManager: invalidateInput
+03-19 23:56:10.433  8066  8066 D ViewRootImpl@798f327[Toast]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-19 23:56:10.434  8066  8066 I ViewRootImpl@798f327[Toast]: Setup new sync=wmsSync-ViewRootImpl@798f327[Toast]#16
+03-19 23:56:10.434  8066  8066 I ViewRootImpl@798f327[Toast]: Creating new active sync group ViewRootImpl@798f327[Toast]#17
+03-19 23:56:10.440  8066  8066 I ViewRootImpl@798f327[Toast]: registerCallbacksForSync syncBuffer=false
+03-19 23:56:10.442  8066  8260 I ViewRootImpl@798f327[Toast]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-19 23:56:10.442  8066  8260 I ViewRootImpl@798f327[Toast]: mWNT: t=0x7015d11c00 mBlastBufferQueue=0x7015eb9300 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-19 23:56:10.442  8066  8260 I ViewRootImpl@798f327[Toast]: Setting up sync and frameCommitCallback
+03-19 23:56:10.448  8066  8133 I BLASTBufferQueue: [ViewRootImpl@798f327[Toast]#7](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-19 23:56:10.454  8066  8133 I ViewRootImpl@798f327[Toast]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-19 23:56:10.456  8066  8133 D OpenGLRenderer: CFMS:: SetUp Pid : 8066    Tid : 8133
+03-19 23:56:10.456  8066  8066 I ViewRootImpl@798f327[Toast]: reportDrawFinished seqId=0
+03-19 23:56:10.466  8066  8091 I OpenGLRenderer: Davey! duration=1096ms; Flags=1, FrameTimelineVsyncId=33402631, IntendedVsync=108852837708449, Vsync=108853672938374, InputEventId=0, HandleInputStart=108853708718578, AnimationStart=108853708722328, PerformTraversalsStart=108853708842120, DrawStart=108853918131026, FrameDeadline=108852848819560, FrameInterval=108853682842120, FrameStartTime=11136399, SyncQueued=108853919074151, SyncStart=108853919242797, IssueDrawCommandsStart=108853919369619, SwapBuffers=108853925818526, FrameCompleted=108853934680713, DequeueBufferDuration=30521, QueueBufferDuration=4908698, GpuCompleted=108853934680713, SwapBuffersCompleted=108853932381026, DisplayPresentTime=0, CommandSubmissionCompleted=108853925818526, 
+03-19 23:56:10.467 11126 11126 I InputMethodManager: invalidateInput
+03-19 23:56:10.467 11126 11126 I InputMethodManager: invalidateInput
+03-19 23:56:10.468 11126 11126 I InputMethodManager: invalidateInput
+03-19 23:56:10.505 11126 11126 I InputMethodManager: invalidateInput
+03-19 23:56:10.506 11126 11126 I InputMethodManager: invalidateInput
+03-19 23:56:10.517  8066  8133 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-19 23:56:10.518  8066  8066 I ViewRootImpl@798f327[Toast]: handleResized, msg = 5 frames=ClientWindowFrames{frame=[90,1240][990,2093] display=[0,66][1080,2273] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
+03-19 23:56:10.518  8066  8066 I ViewRootImpl@798f327[Toast]: handleResized mSyncSeqId = 0
+03-19 23:56:10.519  8066  8066 D ViewRootImpl@798f327[Toast]: reportNextDraw android.view.ViewRootImpl.handleResized:2530 android.view.ViewRootImpl.-$$Nest$mhandleResized:0 android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:7197 android.view.ViewRootImpl$ViewRootHandler.handleMessage:7166 android.os.Handler.dispatchMessage:106 
+03-19 23:56:10.537 11126 11126 I DecorView: setWindowBackground: isPopOver=false color=ff000000 d=android.graphics.drawable.ColorDrawable@b30f1d9
+03-19 23:56:10.543  8066  8066 I ViewRootImpl@798f327[Toast]: Setup new sync=wmsSync-ViewRootImpl@798f327[Toast]#18
+03-19 23:56:10.543  8066  8066 I ViewRootImpl@798f327[Toast]: Creating new active sync group ViewRootImpl@798f327[Toast]#19
+03-19 23:56:10.545  8066  8066 I ViewRootImpl@798f327[Toast]: registerCallbacksForSync syncBuffer=false
+03-19 23:56:10.546  8066  8261 I ViewRootImpl@798f327[Toast]: Received frameDrawingCallback syncResult=0 frameNum=2.
+03-19 23:56:10.546  8066  8261 I ViewRootImpl@798f327[Toast]: mWNT: t=0x7015d12f80 mBlastBufferQueue=0x7015eb9300 fn= 2 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-19 23:56:10.546  8066  8261 I ViewRootImpl@798f327[Toast]: Setting up sync and frameCommitCallback
+03-19 23:56:10.546  8066  8133 I ViewRootImpl@798f327[Toast]: Received frameCommittedCallback lastAttemptedDrawFrameNum=2 didProduceBuffer=false
+03-19 23:56:10.546  8066  8133 I BLASTBufferQueue_Java: gatherPendingTransactions, mName= ViewRootImpl@798f327[Toast] mNativeObject= 0x7015eb9300 frameNumber= 2 caller= android.view.ViewRootImpl$8.lambda$onFrameDraw$1:13914 android.view.ViewRootImpl$8.$r8$lambda$6frSHsGsDhUEo8Wl9hChpniTVZ0:0 android.view.ViewRootImpl$8$$ExternalSyntheticLambda1.onFrameCommit:9 android.view.ThreadedRenderer$1.lambda$onFrameDraw$0:804 android.view.ThreadedRenderer$1$$ExternalSyntheticLambda0.onFrameCommit:2 <bottom of call stack> 
+03-19 23:56:10.547  8066  8066 I ViewRootImpl@798f327[Toast]: reportDrawFinished seqId=0
+03-19 23:56:10.565 11126 11126 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10334; state: DISABLED
+03-19 23:56:10.591 11126 11126 W OpenGLRenderer: Unknown dataspace 0
+03-19 23:56:10.592 11126 11210 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-19 23:56:10.626 11126 11126 I InsetsController: onStateChanged: host=com.termux.gui/com.termux.gui.GUIConfigActivity, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2408), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-19 23:56:10.628 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: synced displayState. AttachInfo displayState=2
+03-19 23:56:10.628 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: setView = com.android.internal.policy.DecorView@c8e8f44 TM=true
+03-19 23:56:10.629 11126 11126 I IDS_TAG : Starting IDS observe window
+03-19 23:56:10.635 11126 11126 I IDS_TAG : Getting Shared Preference for com.termux.gui.App@af1e82d uid = 10334
+03-19 23:56:10.703 11126 11126 I IDS_TAG : App com.termux.gui.App@af1e82d has not finished training
+03-19 23:56:10.705 11126 11210 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-19 23:56:10.706 11126 11126 I IDS_TAG : Closing IDS observe window
+03-19 23:56:10.706 11126 11126 I IDS_TAG : Getting Shared Preference for com.termux.gui.App@af1e82d uid = 10334
+03-19 23:56:10.708 11126 11126 I IDS_TAG : IDS count updated to 3 for com.termux.gui.App@af1e82d
+03-19 23:56:10.724 11126 11126 D AnimatorSet: mReversing is false. Don't call initChildren.
+03-19 23:56:10.725 11126 11126 D AnimatorSet: mReversing is false. Don't call initChildren.
+03-19 23:56:10.845 11126 11126 I BufferQueueProducer: [](id:2b7600000000,api:0,p:0,c:11126) setDequeueTimeout:2077252342
+03-19 23:56:10.845 11126 11126 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@7bff198[GUIConfigActivity] mNativeObject= 0xb40000707c832e00 sc.mNativeObject= 0xb40000708c358380 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-19 23:56:10.846 11126 11126 I BLASTBufferQueue_Java: update, w= 1080 h= 2408 mName = ViewRootImpl@7bff198[GUIConfigActivity] mNativeObject= 0xb40000707c832e00 sc.mNativeObject= 0xb40000708c358380 format= -1 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-19 23:56:10.847 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: Relayout returned: old=(0,0,1080,2408) new=(0,0,1080,2408) relayoutAsync=false req=(1080,2408)0 dur=16 res=0x403 s={true 0xb40000708c245800} ch=true seqId=0
+03-19 23:56:10.847 11126 11126 D ViewRootImpl@7bff198[GUIConfigActivity]: mThreadedRenderer.initialize() mSurface={isValid=true 0xb40000708c245800} hwInitialized=true
+03-19 23:56:10.849 11126 11126 D AutofillManager: notifyViewEnteredForFillDialog:1073741824
+03-19 23:56:10.849 11126 11126 D AutofillManager: notifyViewEnteredForFillDialog:1073741825
+03-19 23:56:10.850 11126 11126 D AutofillManager: notifyViewEnteredForFillDialog:1073741826
+03-19 23:56:10.850 11126 11126 D AutofillManager: notifyViewEnteredForFillDialog:1073741827
+03-19 23:56:10.851 11126 11126 D ViewRootImpl@7bff198[GUIConfigActivity]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-19 23:56:10.853 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: Setup new sync=wmsSync-ViewRootImpl@7bff198[GUIConfigActivity]#0
+03-19 23:56:10.854 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: Creating new active sync group ViewRootImpl@7bff198[GUIConfigActivity]#1
+03-19 23:56:10.862 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: registerCallbacksForSync syncBuffer=false
+03-19 23:56:10.873 11126 11280 I ViewRootImpl@7bff198[GUIConfigActivity]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-19 23:56:10.873 11126 11280 I ViewRootImpl@7bff198[GUIConfigActivity]: mWNT: t=0xb40000708c220100 mBlastBufferQueue=0xb40000707c832e00 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-19 23:56:10.873 11126 11280 I ViewRootImpl@7bff198[GUIConfigActivity]: Setting up sync and frameCommitCallback
+03-19 23:56:10.964 11126 11210 I BLASTBufferQueue: [ViewRootImpl@7bff198[GUIConfigActivity]#0](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-19 23:56:10.965 11126 11210 I ViewRootImpl@7bff198[GUIConfigActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-19 23:56:10.967 11126 11210 D OpenGLRenderer: CFMS:: SetUp Pid : 11126    Tid : 11210
+03-19 23:56:10.968 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: reportDrawFinished seqId=0
+03-19 23:56:10.971 11126 11126 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=com.termux.gui/com.termux.gui.GUIConfigActivity
+03-19 23:56:10.972 11126 11126 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=statusBars, host=com.termux.gui/com.termux.gui.GUIConfigActivity
+03-19 23:56:11.035 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: handleWindowFocusChanged: 1 0 call from android.view.ViewRootImpl.-$$Nest$mhandleWindowFocusChanged:0
+03-19 23:56:11.035 11126 11126 D ViewRootImpl@7bff198[GUIConfigActivity]: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb40000708c245800}
+03-19 23:56:11.036 11126 11126 D InputMethodManagerUtils: startInputInner - Id : 0
+03-19 23:56:11.036 11126 11126 I InputMethodManager: startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+03-19 23:56:11.060 11126 11126 D InputMethodManagerUtils: startInputInner - Id : 0
+03-19 23:56:11.100 11126 11126 I InsetsController: onStateChanged: host=com.termux.gui/com.termux.gui.GUIConfigActivity, from=android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:7209, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2408), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-19 23:56:11.101 11126 11126 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=false, type=ime, host=com.termux.gui/com.termux.gui.GUIConfigActivity
+03-19 23:56:12.420 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 0
+03-19 23:56:12.796 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 1
+03-19 23:56:12.853  8066  8066 I WindowManager: WindowManagerGlobal#removeView, ty=2005, view=android.widget.LinearLayout{c3361e6 V.E...... ........ 0,0-900,853}, caller=android.view.WindowManagerGlobal.removeView:628 android.view.WindowManagerImpl.removeViewImmediate:208 android.widget.ToastPresenter.hide:358 
+03-19 23:56:12.853  8066  8066 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda19@2c3b672
+03-19 23:56:12.859  8066  8133 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-19 23:56:12.862  8066  8066 I ViewRootImpl@798f327[Toast]: dispatchDetachedFromWindow
+03-19 23:56:12.880  8066  8066 D InputTransport: Input channel destroyed: '3e092c2', fd=105
+03-19 23:56:12.883  8066  8066 V Toast   : HANDLE SHOW: android.widget.Toast$TN@2afa1ca mView=null mNextView=java.lang.ref.WeakReference@44f9f3b
+03-19 23:56:12.884  8066  8066 V ToastPresenter: yOffset = 180
+03-19 23:56:12.885  8066  8066 V ToastPresenter: Text: Frro in android.widget.ToastPresenter@b0cf658
+03-19 23:56:12.885  8066  8066 I WindowManager: WindowManagerGlobal#addView, ty=2005, view=android.widget.LinearLayout{7a3e3b1 V.E...... ......I. 0,0-0,0}, caller=android.view.WindowManagerImpl.addView:150 android.widget.ToastPresenter.addToastView:414 android.widget.ToastPresenter.show:335 
+03-19 23:56:12.887  8066  8133 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-19 23:56:12.900  8066  8066 I InsetsController: onStateChanged: host=Toast, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-19 23:56:12.900  8066  8066 I ViewRootImpl@c0e1096[Toast]: synced displayState. AttachInfo displayState=2
+03-19 23:56:12.901  8066  8066 I ViewRootImpl@c0e1096[Toast]: setView = android.widget.LinearLayout@7a3e3b1 TM=true
+03-19 23:56:12.928  8066  8066 I BufferQueueProducer: [](id:1f8200000008,api:0,p:-1,c:8066) setDequeueTimeout:2077252342
+03-19 23:56:12.929  8066  8066 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@c0e1096[Toast] mNativeObject= 0x7070e7f200 sc.mNativeObject= 0x708c0afd80 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-19 23:56:12.929  8066  8066 I BLASTBufferQueue_Java: update, w= 900 h= 482 mName = ViewRootImpl@c0e1096[Toast] mNativeObject= 0x7070e7f200 sc.mNativeObject= 0x708c0afd80 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-19 23:56:12.930  8066  8066 I ViewRootImpl@c0e1096[Toast]: Relayout returned: old=(0,66,1080,2273) new=(90,1611,990,2093) relayoutAsync=false req=(900,482)0 dur=11 res=0x3 s={true 0x708c078800} ch=true seqId=0
+03-19 23:56:12.931  8066  8066 D ViewRootImpl@c0e1096[Toast]: mThreadedRenderer.initialize() mSurface={isValid=true 0x708c078800} hwInitialized=true
+03-19 23:56:12.933  8066  8066 D ViewRootImpl@c0e1096[Toast]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-19 23:56:12.933  8066  8066 I ViewRootImpl@c0e1096[Toast]: Setup new sync=wmsSync-ViewRootImpl@c0e1096[Toast]#20
+03-19 23:56:12.933  8066  8066 I ViewRootImpl@c0e1096[Toast]: Creating new active sync group ViewRootImpl@c0e1096[Toast]#21
+03-19 23:56:12.935  8066  8066 I ViewRootImpl@c0e1096[Toast]: registerCallbacksForSync syncBuffer=false
+03-19 23:56:12.939  8066  8260 I ViewRootImpl@c0e1096[Toast]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-19 23:56:12.940  8066  8260 I ViewRootImpl@c0e1096[Toast]: mWNT: t=0x7015e56180 mBlastBufferQueue=0x7070e7f200 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-19 23:56:12.940  8066  8260 I ViewRootImpl@c0e1096[Toast]: Setting up sync and frameCommitCallback
+03-19 23:56:12.942  8066  8133 I BLASTBufferQueue: [ViewRootImpl@c0e1096[Toast]#8](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-19 23:56:12.943  8066  8133 I ViewRootImpl@c0e1096[Toast]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-19 23:56:12.944  8066  8133 D OpenGLRenderer: CFMS:: SetUp Pid : 8066    Tid : 8133
+03-19 23:56:12.944  8066  8066 I ViewRootImpl@c0e1096[Toast]: reportDrawFinished seqId=0
+03-19 23:56:12.945  8066  8133 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-19 23:56:13.160 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 0
+03-19 23:56:13.242 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 1
+03-19 23:56:13.256 11126 11126 D AutofillManager: notifyViewEnteredForFillDialog:1073741825
+03-19 23:56:14.067 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 0
+03-19 23:56:14.154 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 1
+03-19 23:56:14.161 11126 11126 D AutofillManager: notifyViewEnteredForFillDialog:1073741825
+03-19 23:56:15.894 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 0
+03-19 23:56:16.354 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 1
+03-19 23:56:16.369  8066  8066 I WindowManager: WindowManagerGlobal#removeView, ty=2005, view=android.widget.LinearLayout{7a3e3b1 V.E...... ........ 0,0-900,482}, caller=android.view.WindowManagerGlobal.removeView:628 android.view.WindowManagerImpl.removeViewImmediate:208 android.widget.ToastPresenter.hide:358 
+03-19 23:56:16.370  8066  8066 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda19@a6209ed
+03-19 23:56:16.375  8066  8133 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-19 23:56:16.376  8066  8066 I ViewRootImpl@c0e1096[Toast]: dispatchDetachedFromWindow
+03-19 23:56:16.406  8066  8066 D InputTransport: Input channel destroyed: '63d1043', fd=105
+03-19 23:56:16.523 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 0
+03-19 23:56:17.245 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 1
+03-19 23:56:19.029  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:56:19.032 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:56:19.658 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 0
+03-19 23:56:19.677  8066  8066 I ViewRootImpl@212fe0b[TermuxWidgetLauncherActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:56:19.679 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-19 23:56:19.706 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 1
+03-19 23:56:19.719 11126 11126 D AutofillManager: notifyViewEnteredForFillDialog:1073741827
+03-19 23:56:20.996 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 0
+03-19 23:56:21.973 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme pointer 1
+03-19 23:56:22.831 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme key 0
+03-19 23:56:22.838 11126 11126 D Activity: onKeyDown(KEYCODE_BACK)
+03-19 23:56:22.841 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: ViewPostIme key 1
+03-19 23:56:22.841 11126 11126 D Activity: onKeyUp(KEYCODE_BACK) isTracking()=true isCanceled()=false hasCallback=false
+03-19 23:56:22.842 11126 11126 D Activity: onBackPressed
+03-19 23:56:23.205 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: handleWindowFocusChanged: 0 0 call from android.view.ViewRootImpl.-$$Nest$mhandleWindowFocusChanged:0
+03-19 23:56:23.205 11126 11126 I ImeFocusController: onPreWindowFocus: skipped, hasWindowFocus=false mHasImeFocus=true
+03-19 23:56:23.214 11126 11126 I ImeFocusController: onPostWindowFocus: skipped, hasWindowFocus=false mHasImeFocus=true
+03-19 23:56:23.335 11126 11126 D InputTransport: Input channel destroyed: 'ClientS', fd=118
+03-19 23:56:23.573 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: handleAppVisibility mAppVisible = true visible = false
+03-19 23:56:23.584 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: destroyHardwareResources: Callers=android.view.ViewRootImpl.performTraversals:3932 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 android.os.Handler.handleCallback:958 android.os.Handler.dispatchMessage:99 
+03-19 23:56:23.594 11126 11210 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-19 23:56:23.606 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: Relayout returned: old=(0,0,1080,2408) new=(0,0,1080,2408) relayoutAsync=false req=(1080,2408)8 dur=9 res=0x402 s={false 0x0} ch=true seqId=0
+03-19 23:56:23.608 11126 11210 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-19 23:56:23.622 11126 11126 I ViewRootImpl@7bff198[GUIConfigActivity]: stopped(true) old = false
+03-19 23:56:23.622 11126 11126 D ViewRootImpl@7bff198[GUIConfigActivity]: WindowStopped on com.termux.gui/com.termux.gui.GUIConfigActivity set to true
+03-19 23:56:23.622 11126 11210 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-20 00:09:06.590 17527 17527 I libc    : SetHeapTaggingLevel: tag level set to 0
+03-20 00:09:06.626 17527 17527 I m.termux.widget: Using CollectorTypeCC GC.
+03-20 00:09:06.631 17527 17527 E m.termux.widget: Not starting debugger since process cannot load the jdwp agent.
+03-20 00:09:06.641 17527 17527 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+03-20 00:09:06.645 17527 17527 D ActivityThread: setConscryptValidator
+03-20 00:09:06.645 17527 17527 D ActivityThread: setConscryptValidator - put
+03-20 00:09:06.664 17527 17527 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10334; state: DISABLED
+03-20 00:09:06.664 17527 17527 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10334; state: DISABLED
+03-20 00:09:06.670 17527 17527 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+03-20 00:09:06.685 17527 17527 D nativeloader: Configuring clns-4 for other apk /data/app/~~ShCRQaA3-vwikXhykeogtQ==/com.termux.widget-gHaIbYhfcnbb42qVUlrBCg==/base.apk. target_sdk_version=28, uses_libraries=, library_path=/data/app/~~ShCRQaA3-vwikXhykeogtQ==/com.termux.widget-gHaIbYhfcnbb42qVUlrBCg==/lib/arm64:/data/app/~~ShCRQaA3-vwikXhykeogtQ==/com.termux.widget-gHaIbYhfcnbb42qVUlrBCg==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.termux.widget
+03-20 00:09:06.685 17527 17527 D nativeloader: Extending system_exposed_libraries: libPortraitDistortionCorrection.arcsoft.so:libPortraitDistortionCorrectionCali.arcsoft.so:libface_landmark.arcsoft.so:libimage_enhancement.arcsoft.so:liblow_light_hdr.arcsoft.so:libhigh_dynamic_range.arcsoft.so:libFacialAttributeDetection.arcsoft.so:libbinauralrenderer_wrapper.qti.so:libhoaeffects.qti.so:libaudiomirroring_jni.audiomirroring.samsung.so:libBeauty_v4.camera.samsung.so:libexifa.camera.samsung.so:libjpega.camera.samsung.so:libOpenCv.camera.samsung.so:libImageScreener.camera.samsung.so:libMyFilter.camera.samsung.so:libtensorflowLite.myfilter.camera.samsung.so:libtensorflowlite_inference_api.myfilter.camera.samsung.so:libUltraWideDistortionCorrection.camera.samsung.so:libFace_Landmark_API.camera.samsung.so:libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so:libHprFace_GAE_api.camera.samsung.so:libFacialBasedSelfieCorrection.camera.samsung.so:libHprFace_GAE_jni.camera.samsung.so:libcolor_engine.camera.samsung.so:libDLInterface_aidl.camera.samsung.so:libImageTagger.came
+03-20 00:09:06.693 17527 17527 D nativeloader: Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+03-20 00:09:06.703 17527 17527 V GraphicsEnvironment: Currently set values for:
+03-20 00:09:06.703 17527 17527 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+03-20 00:09:06.703 17527 17527 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+03-20 00:09:06.703 17527 17527 V GraphicsEnvironment: ANGLE GameManagerService for com.termux.widget: false
+03-20 00:09:06.703 17527 17527 V GraphicsEnvironment: com.termux.widget is not listed in per-application setting
+03-20 00:09:06.704 17527 17527 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+03-20 00:09:06.714 17527 17527 I TermuxWidgetApplication: AppInit
+03-20 00:09:06.715 17527 17527 D CompatibilityChangeReporter: Compat change id reported: 247079863; UID 10334; state: DISABLED
+03-20 00:09:06.719 17527 17527 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/home/.termux/termux.properties": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/home/.termux/termux.properties": lstat failed: EACCES (Permission denied)
+03-20 00:09:06.719 17527 17527 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/home/.config/termux/termux.properties": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/home/.config/termux/termux.properties": lstat failed: EACCES (Permission denied)
+03-20 00:09:06.719 17527 17527 W TermuxWidget.SharedProperties: Not loading properties since file is null
+03-20 00:09:06.723 17527 17527 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-20 00:09:06.731 17527 17554 I AdrenoGLES-0: QUALCOMM build                   : ec028f8cac, Ic8928a1631
+03-20 00:09:06.731 17527 17554 I AdrenoGLES-0: Build Date                       : 08/23/22
+03-20 00:09:06.731 17527 17554 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.17
+03-20 00:09:06.731 17527 17554 I AdrenoGLES-0: Local Branch                     : 
+03-20 00:09:06.731 17527 17554 I AdrenoGLES-0: Remote Branch                    : 
+03-20 00:09:06.731 17527 17554 I AdrenoGLES-0: Remote Branch                    : 
+03-20 00:09:06.731 17527 17554 I AdrenoGLES-0: Reconstruct Branch               : 
+03-20 00:09:06.731 17527 17554 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch64
+03-20 00:09:06.731 17527 17554 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+03-20 00:09:06.733 17527 17527 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+03-20 00:09:06.768 17527 17527 I DecorView: setWindowBackground: isPopOver=false color=ffffffff d=android.graphics.drawable.ColorDrawable@8f64b68
+03-20 00:09:06.781 17527 17527 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10334; state: ENABLED
+03-20 00:09:06.782 17527 17527 D ScrollView: initGoToTop
+03-20 00:09:06.790 17527 17527 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10334; state: DISABLED
+03-20 00:09:06.790 17527 17527 D CompatibilityChangeReporter: Compat change id reported: 37756858; UID 10334; state: ENABLED
+03-20 00:09:06.795 17527 17554 I AdrenoGLES-0: PFP: 0x016ee197, ME: 0x00000000
+03-20 00:09:06.850 17527 17527 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10334; state: DISABLED
+03-20 00:09:06.856 17527 17527 W OpenGLRenderer: Unknown dataspace 0
+03-20 00:09:06.857 17527 17554 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-20 00:09:06.866 17527 17527 I InsetsController: onStateChanged: host=com.termux.widget/com.termux.widget.activities.TermuxWidgetLauncherActivity, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2408), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-20 00:09:06.867 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: synced displayState. AttachInfo displayState=2
+03-20 00:09:06.867 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: setView = com.android.internal.policy.DecorView@f865de0 TM=true
+03-20 00:09:06.867 17527 17527 I IDS_TAG : Starting IDS observe window
+03-20 00:09:06.868 17527 17527 I IDS_TAG : Getting Shared Preference for com.termux.widget.TermuxWidgetApplication@c60d9a6 uid = 10334
+03-20 00:09:06.871 17527 17527 I IDS_TAG : App com.termux.widget.TermuxWidgetApplication@c60d9a6 has not finished training
+03-20 00:09:06.872 17527 17527 I IDS_TAG : Closing IDS observe window
+03-20 00:09:06.872 17527 17527 I IDS_TAG : Getting Shared Preference for com.termux.widget.TermuxWidgetApplication@c60d9a6 uid = 10334
+03-20 00:09:06.872 17527 17527 I IDS_TAG : IDS count updated to 5 for com.termux.widget.TermuxWidgetApplication@c60d9a6
+03-20 00:09:06.922 17527 17527 I BufferQueueProducer: [](id:447700000000,api:0,p:0,c:17527) setDequeueTimeout:2077252342
+03-20 00:09:06.923 17527 17527 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity] mNativeObject= 0x708bed3100 sc.mNativeObject= 0x708beb2700 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-20 00:09:06.923 17527 17527 I BLASTBufferQueue_Java: update, w= 1080 h= 2408 mName = ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity] mNativeObject= 0x708bed3100 sc.mNativeObject= 0x708beb2700 format= -1 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-20 00:09:06.924 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: Relayout returned: old=(0,0,1080,2408) new=(0,0,1080,2408) relayoutAsync=false req=(1080,2408)0 dur=13 res=0x403 s={true 0x708be1c000} ch=true seqId=0
+03-20 00:09:06.924 17527 17527 D ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: mThreadedRenderer.initialize() mSurface={isValid=true 0x708be1c000} hwInitialized=true
+03-20 00:09:06.926 17527 17527 D ScrollView:  onsize change changed 
+03-20 00:09:06.926 17527 17527 D ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-20 00:09:06.928 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: Setup new sync=wmsSync-ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]#0
+03-20 00:09:06.928 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: Creating new active sync group ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]#1
+03-20 00:09:06.933 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: registerCallbacksForSync syncBuffer=false
+03-20 00:09:06.947 17527 17562 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-20 00:09:06.948 17527 17562 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: mWNT: t=0x708bf2a180 mBlastBufferQueue=0x708bed3100 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-20 00:09:06.948 17527 17562 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: Setting up sync and frameCommitCallback
+03-20 00:09:06.974 17527 17554 I BLASTBufferQueue: [ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]#0](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-20 00:09:06.975 17527 17554 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-20 00:09:06.976 17527 17554 D OpenGLRenderer: CFMS:: SetUp Pid : 17527    Tid : 17554
+03-20 00:09:06.977 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: reportDrawFinished seqId=0
+03-20 00:09:06.983 17527 17527 E TermuxWidget: Failed to get file type for file at path "/data/data/com.termux/files/usr": Failed to run Os.lstat() on file at path "/data/data/com.termux/files/usr": lstat failed: EACCES (Permission denied)
+03-20 00:09:06.984 17527 17527 E TermuxWidget.TermuxWidgetProvider: The Termux app $PREFIX directory is not accessible by the Termux:Widget app. This may be because you have not installed or setup Termux app or Termux app and Termux:Widget app both have different APK signatures because you have managed to install both apps from different sources. It may also be because Termux $PREFIX directory "/data/data/com.termux/files/usr" does not exist or does not have read, write and execute permissions. The Termux is required by the Termux:Widget app to run termux commands.
+03-20 00:09:06.984 17527 17554 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-20 00:09:06.991 17527 17527 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=com.termux.widget/com.termux.widget.activities.TermuxWidgetLauncherActivity
+03-20 00:09:06.992 17527 17527 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=statusBars, host=com.termux.widget/com.termux.widget.activities.TermuxWidgetLauncherActivity
+03-20 00:09:06.996 17527 17527 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10334; state: DISABLED
+03-20 00:09:07.003 17527 17527 I Toast   : show: caller = com.termux.shared.logger.Logger.lambda$showToast$0:401 
+03-20 00:09:07.007 17527 17527 I Toast   : show: contextDispId = 0 mCustomDisplayId = -1 focusedDisplayId = 0 isActivityContext = false
+03-20 00:09:07.017 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: handleWindowFocusChanged: 1 0 call from android.view.ViewRootImpl.-$$Nest$mhandleWindowFocusChanged:0
+03-20 00:09:07.017 17527 17527 D ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0x708be1c000}
+03-20 00:09:07.019 17527 17527 D InputMethodManagerUtils: startInputInner - Id : 0
+03-20 00:09:07.019 17527 17527 I InputMethodManager: startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+03-20 00:09:07.029 17527 17527 V Toast   : HANDLE SHOW: android.widget.Toast$TN@c996992 mView=null mNextView=java.lang.ref.WeakReference@4689f63
+03-20 00:09:07.034 17527 17527 V ToastPresenter: yOffset = 180
+03-20 00:09:07.035 17527 17527 V ToastPresenter: Text: Uhe  in android.widget.ToastPresenter@aae3760
+03-20 00:09:07.035 17527 17527 I WindowManager: WindowManagerGlobal#addView, ty=2005, view=android.widget.LinearLayout{54d0419 V.E...... ......I. 0,0-0,0}, caller=android.view.WindowManagerImpl.addView:150 android.widget.ToastPresenter.addToastView:414 android.widget.ToastPresenter.show:335 
+03-20 00:09:07.038 17527 17554 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-20 00:09:07.047 17527 17527 I InsetsController: onStateChanged: host=Toast, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-20 00:09:07.047 17527 17527 I ViewRootImpl@d608cde[Toast]: synced displayState. AttachInfo displayState=2
+03-20 00:09:07.047 17527 17527 I ViewRootImpl@d608cde[Toast]: setView = android.widget.LinearLayout@54d0419 TM=true
+03-20 00:09:07.048 17527 17527 D InputMethodManagerUtils: startInputInner - Id : 0
+03-20 00:09:07.048 17527 17554 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-20 00:09:07.059 17527 17564 I ViewRootImpl@d608cde[Toast]: Resizing android.view.ViewRootImpl@eeb59b6: frame = [90,1240][990,2093] reportDraw = true forceLayout = false syncSeqId = -1
+03-20 00:09:07.059 17527 17527 I BufferQueueProducer: [](id:447700000001,api:0,p:0,c:17527) setDequeueTimeout:2077252342
+03-20 00:09:07.060 17527 17527 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@d608cde[Toast] mNativeObject= 0x708bee3b00 sc.mNativeObject= 0x708bf4ddc0 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-20 00:09:07.060 17527 17527 I BLASTBufferQueue_Java: update, w= 900 h= 853 mName = ViewRootImpl@d608cde[Toast] mNativeObject= 0x708bee3b00 sc.mNativeObject= 0x708bf4ddc0 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-20 00:09:07.060 17527 17527 I ViewRootImpl@d608cde[Toast]: Relayout returned: old=(0,66,1080,2273) new=(90,1240,990,2093) relayoutAsync=false req=(900,853)0 dur=5 res=0x3 s={true 0x708be1e800} ch=true seqId=0
+03-20 00:09:07.061 17527 17527 D ViewRootImpl@d608cde[Toast]: mThreadedRenderer.initialize() mSurface={isValid=true 0x708be1e800} hwInitialized=true
+03-20 00:09:07.062 17527 17527 D ViewRootImpl@d608cde[Toast]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-20 00:09:07.062 17527 17527 I ViewRootImpl@d608cde[Toast]: Setup new sync=wmsSync-ViewRootImpl@d608cde[Toast]#2
+03-20 00:09:07.062 17527 17527 I ViewRootImpl@d608cde[Toast]: Creating new active sync group ViewRootImpl@d608cde[Toast]#3
+03-20 00:09:07.062 17527 17527 I ViewRootImpl@d608cde[Toast]: registerCallbacksForSync syncBuffer=false
+03-20 00:09:07.063 17527 17563 I ViewRootImpl@d608cde[Toast]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-20 00:09:07.063 17527 17563 I ViewRootImpl@d608cde[Toast]: mWNT: t=0x708c009980 mBlastBufferQueue=0x708bee3b00 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-20 00:09:07.063 17527 17563 I ViewRootImpl@d608cde[Toast]: Setting up sync and frameCommitCallback
+03-20 00:09:07.069 17527 17554 I BLASTBufferQueue: [ViewRootImpl@d608cde[Toast]#1](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-20 00:09:07.070 17527 17554 I ViewRootImpl@d608cde[Toast]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-20 00:09:07.071 17527 17554 D OpenGLRenderer: CFMS:: SetUp Pid : 17527    Tid : 17554
+03-20 00:09:07.071 17527 17527 I ViewRootImpl@d608cde[Toast]: reportDrawFinished seqId=0
+03-20 00:09:07.072 17527 17527 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=false, type=ime, host=com.termux.widget/com.termux.widget.activities.TermuxWidgetLauncherActivity
+03-20 00:09:07.072 17527 17527 I ViewRootImpl@d608cde[Toast]: handleResized, msg = 5 frames=ClientWindowFrames{frame=[90,1240][990,2093] display=[0,66][1080,2273] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
+03-20 00:09:07.072 17527 17527 I ViewRootImpl@d608cde[Toast]: handleResized mSyncSeqId = 0
+03-20 00:09:07.072 17527 17527 D ViewRootImpl@d608cde[Toast]: reportNextDraw android.view.ViewRootImpl.handleResized:2530 android.view.ViewRootImpl.-$$Nest$mhandleResized:0 android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:7197 android.view.ViewRootImpl$ViewRootHandler.handleMessage:7166 android.os.Handler.dispatchMessage:106 
+03-20 00:09:07.073 17527 17527 I ViewRootImpl@d608cde[Toast]: Setup new sync=wmsSync-ViewRootImpl@d608cde[Toast]#4
+03-20 00:09:07.073 17527 17527 I ViewRootImpl@d608cde[Toast]: Creating new active sync group ViewRootImpl@d608cde[Toast]#5
+03-20 00:09:07.073 17527 17527 I ViewRootImpl@d608cde[Toast]: registerCallbacksForSync syncBuffer=false
+03-20 00:09:07.073 17527 17562 I ViewRootImpl@d608cde[Toast]: Received frameDrawingCallback syncResult=0 frameNum=2.
+03-20 00:09:07.073 17527 17562 I ViewRootImpl@d608cde[Toast]: mWNT: t=0x708c00a400 mBlastBufferQueue=0x708bee3b00 fn= 2 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-20 00:09:07.073 17527 17562 I ViewRootImpl@d608cde[Toast]: Setting up sync and frameCommitCallback
+03-20 00:09:07.073 17527 17554 I ViewRootImpl@d608cde[Toast]: Received frameCommittedCallback lastAttemptedDrawFrameNum=2 didProduceBuffer=false
+03-20 00:09:07.074 17527 17554 I BLASTBufferQueue_Java: gatherPendingTransactions, mName= ViewRootImpl@d608cde[Toast] mNativeObject= 0x708bee3b00 frameNumber= 2 caller= android.view.ViewRootImpl$8.lambda$onFrameDraw$1:13914 android.view.ViewRootImpl$8.$r8$lambda$6frSHsGsDhUEo8Wl9hChpniTVZ0:0 android.view.ViewRootImpl$8$$ExternalSyntheticLambda1.onFrameCommit:9 android.view.ThreadedRenderer$1.lambda$onFrameDraw$0:804 android.view.ThreadedRenderer$1$$ExternalSyntheticLambda0.onFrameCommit:2 <bottom of call stack> 
+03-20 00:09:07.074 17527 17527 I ViewRootImpl@d608cde[Toast]: reportDrawFinished seqId=0
+03-20 00:09:08.031 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: ViewPostIme key 0
+03-20 00:09:08.031 17527 17527 D Activity: onKeyDown(KEYCODE_BACK)
+03-20 00:09:08.086 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: ViewPostIme key 1
+03-20 00:09:08.086 17527 17527 D Activity: onKeyUp(KEYCODE_BACK) isTracking()=true isCanceled()=false hasCallback=false
+03-20 00:09:08.087 17527 17527 D Activity: onBackPressed
+03-20 00:09:08.116 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: handleWindowFocusChanged: 0 0 call from android.view.ViewRootImpl.-$$Nest$mhandleWindowFocusChanged:0
+03-20 00:09:08.116 17527 17527 I ImeFocusController: onPreWindowFocus: skipped, hasWindowFocus=false mHasImeFocus=true
+03-20 00:09:08.118 17527 17527 I ImeFocusController: onPostWindowFocus: skipped, hasWindowFocus=false mHasImeFocus=true
+03-20 00:09:08.211 17527 17527 D InputTransport: Input channel destroyed: 'ClientS', fd=119
+03-20 00:09:08.230 17527 17543 I ViewRootImpl@d608cde[Toast]: Resizing android.view.ViewRootImpl@eeb59b6: frame = [90,1240][990,2093] reportDraw = false forceLayout = false syncSeqId = -1
+03-20 00:09:08.230 17527 17527 I ViewRootImpl@d608cde[Toast]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[90,1240][990,2093] display=[0,66][1080,2273] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
+03-20 00:09:08.440 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: handleAppVisibility mAppVisible = true visible = false
+03-20 00:09:08.448 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: destroyHardwareResources: Callers=android.view.ViewRootImpl.performTraversals:3932 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 android.os.Handler.handleCallback:958 android.os.Handler.dispatchMessage:99 
+03-20 00:09:08.457 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: Relayout returned: old=(0,0,1080,2408) new=(0,0,1080,2408) relayoutAsync=false req=(1080,2408)8 dur=6 res=0x402 s={false 0x0} ch=true seqId=0
+03-20 00:09:08.458 17527 17554 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-20 00:09:08.459 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: stopped(true) old = false
+03-20 00:09:08.459 17527 17527 D ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: WindowStopped on com.termux.widget/com.termux.widget.activities.TermuxWidgetLauncherActivity set to true
+03-20 00:09:08.476 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: Relayout returned: old=(0,0,1080,2408) new=(0,0,1080,2408) relayoutAsync=false req=(1080,2408)8 dur=6 res=0x402 s={false 0x0} ch=false seqId=0
+03-20 00:09:10.517 17527 17527 I WindowManager: WindowManagerGlobal#removeView, ty=2005, view=android.widget.LinearLayout{54d0419 V.E...... ........ 0,0-900,853}, caller=android.view.WindowManagerGlobal.removeView:628 android.view.WindowManagerImpl.removeViewImmediate:208 android.widget.ToastPresenter.hide:358 
+03-20 00:09:10.518 17527 17527 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda19@3321d51
+03-20 00:09:10.520 17527 17554 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-20 00:09:10.520 17527 17527 I ViewRootImpl@d608cde[Toast]: dispatchDetachedFromWindow
+03-20 00:09:10.525 17527 17527 D InputTransport: Input channel destroyed: '2bdbca5', fd=120
+03-20 00:09:11.910 17527 17683 D ProfileInstaller: Installing profile for com.termux.widget
+03-20 00:09:29.928 17527 17554 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-20 00:09:29.928 17527 17554 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-20 00:09:29.931 17527 17539 W m.termux.widget: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~XW0-X26k2RIP5z_gDgf7Zg==/com.termux-BNZyQBbezYnuxxExjYetSQ==/base.apk' with 1 weak references
+03-20 00:09:29.932 17527 17539 W m.termux.widget: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~XW0-X26k2RIP5z_gDgf7Zg==/com.termux-BNZyQBbezYnuxxExjYetSQ==/split_config.arm64_v8a.apk' with 1 weak references
+03-20 00:09:29.932 17527 17539 W m.termux.widget: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~XW0-X26k2RIP5z_gDgf7Zg==/com.termux-BNZyQBbezYnuxxExjYetSQ==/split_config.vi.apk' with 1 weak references
+03-20 00:09:29.932 17527 17539 W m.termux.widget: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~XW0-X26k2RIP5z_gDgf7Zg==/com.termux-BNZyQBbezYnuxxExjYetSQ==/split_config.xxhdpi.apk' with 1 weak references
+03-20 00:16:52.638 21285 21285 I com.termux.gui: Using CollectorTypeCC GC.
+03-20 00:16:52.642 21285 21285 E com.termux.gui: Not starting debugger since process cannot load the jdwp agent.
+03-20 00:16:52.647 21285 21285 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+03-20 00:16:52.650 21285 21285 D ActivityThread: setConscryptValidator
+03-20 00:16:52.650 21285 21285 D ActivityThread: setConscryptValidator - put
+03-20 00:16:52.688 21285 21285 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10334; state: ENABLED
+03-20 00:16:52.688 21285 21285 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10334; state: DISABLED
+03-20 00:16:52.710 21285 21285 D nativeloader: Configuring clns-4 for other apk /data/app/~~jrndrzDWykObDlbFfKLykA==/com.termux.gui-Y2h12HAWoF1EPiwsQdxmjw==/base.apk. target_sdk_version=33, uses_libraries=, library_path=/data/app/~~jrndrzDWykObDlbFfKLykA==/com.termux.gui-Y2h12HAWoF1EPiwsQdxmjw==/lib/arm64:/data/app/~~jrndrzDWykObDlbFfKLykA==/com.termux.gui-Y2h12HAWoF1EPiwsQdxmjw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.termux.gui
+03-20 00:16:52.718 21285 21285 D nativeloader: Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+03-20 00:16:52.724 17527 17527 I ViewRootImpl@d1cf9da[TermuxWidgetLauncherActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-20 00:16:52.728 21285 21285 V GraphicsEnvironment: Currently set values for:
+03-20 00:16:52.728 21285 21285 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+03-20 00:16:52.728 21285 21285 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+03-20 00:16:52.728 21285 21285 V GraphicsEnvironment: ANGLE GameManagerService for com.termux.gui: false
+03-20 00:16:52.728 21285 21285 V GraphicsEnvironment: com.termux.gui is not listed in per-application setting
+03-20 00:16:52.728 21285 21285 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+03-20 00:16:52.863 21285 21285 I EngineFactory: Provider GmsCore_OpenSSL not available
+03-20 00:16:52.878 21285 21285 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-20 00:16:52.886 21285 21308 I AdrenoGLES-0: QUALCOMM build                   : ec028f8cac, Ic8928a1631
+03-20 00:16:52.886 21285 21308 I AdrenoGLES-0: Build Date                       : 08/23/22
+03-20 00:16:52.886 21285 21308 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.17
+03-20 00:16:52.886 21285 21308 I AdrenoGLES-0: Local Branch                     : 
+03-20 00:16:52.886 21285 21308 I AdrenoGLES-0: Remote Branch                    : 
+03-20 00:16:52.886 21285 21308 I AdrenoGLES-0: Remote Branch                    : 
+03-20 00:16:52.886 21285 21308 I AdrenoGLES-0: Reconstruct Branch               : 
+03-20 00:16:52.886 21285 21308 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch64
+03-20 00:16:52.886 21285 21308 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+03-20 00:16:52.896 21285 21308 I AdrenoGLES-0: PFP: 0x016ee197, ME: 0x00000000
+03-20 00:16:52.911 21285 21285 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10334; state: ENABLED
+03-20 00:16:52.918 21285 21285 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10334; state: ENABLED
+03-20 00:16:52.932 21285 21285 I InputMethodManager: invalidateInput
+03-20 00:16:52.933 21285 21285 I InputMethodManager: invalidateInput
+03-20 00:16:52.934 21285 21285 I InputMethodManager: invalidateInput
+03-20 00:16:52.943 21285 21285 I InputMethodManager: invalidateInput
+03-20 00:16:52.943 21285 21285 I InputMethodManager: invalidateInput
+03-20 00:16:52.944 21285 21285 I InputMethodManager: invalidateInput
+03-20 00:16:52.965 21285 21285 I InputMethodManager: invalidateInput
+03-20 00:16:52.965 21285 21285 I InputMethodManager: invalidateInput
+03-20 00:16:52.972 21285 21285 I DecorView: setWindowBackground: isPopOver=false color=ff000000 d=android.graphics.drawable.ColorDrawable@19ebf4d
+03-20 00:16:52.983 21285 21285 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10334; state: DISABLED
+03-20 00:16:52.989 21285 21285 W OpenGLRenderer: Unknown dataspace 0
+03-20 00:16:52.989 21285 21308 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+03-20 00:16:52.998 21285 21285 I InsetsController: onStateChanged: host=com.termux.gui/com.termux.gui.GUIConfigActivity, from=android.view.ViewRootImpl.setView:1753, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2408), mDisplayCutout=DisplayCutout{insets=Rect(0, 66 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 66), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2408 physicalDisplayWidth=1080 physicalDisplayHeight=2408 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 23.46666666666667 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2408), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 66) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2408 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {85620000 mType=statusBars mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {85620005 mType=mandatorySystemGestures mFrame=[0,0][1080,100] mVisible=true mFlags=[]}, InsetsSource: {85620006 mType=tappableElement mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,66] mVisible=true mFlags=[]}, InsetsSource: {311a0001 mType=navigationBars mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {311a0005 mType=mandatorySystemGestures mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0006 mType=tappableElement mFrame=[0,2273][1080,2408] mVisible=true mFlags=[]}, InsetsSource: {311a0024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]} }
+03-20 00:16:52.998 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: synced displayState. AttachInfo displayState=2
+03-20 00:16:52.999 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: setView = com.android.internal.policy.DecorView@65ef0c8 TM=true
+03-20 00:16:53.000 21285 21285 I IDS_TAG : Starting IDS observe window
+03-20 00:16:53.000 21285 21285 I IDS_TAG : Getting Shared Preference for com.termux.gui.App@679a561 uid = 10334
+03-20 00:16:53.008 21285 21285 I IDS_TAG : App com.termux.gui.App@679a561 has not finished training
+03-20 00:16:53.010 21285 21308 D OpenGLRenderer: HWUI - treat SMPTE_170M as sRGB
+03-20 00:16:53.010 21285 21285 I IDS_TAG : Closing IDS observe window
+03-20 00:16:53.010 21285 21285 I IDS_TAG : Getting Shared Preference for com.termux.gui.App@679a561 uid = 10334
+03-20 00:16:53.011 21285 21285 I IDS_TAG : IDS count updated to 4 for com.termux.gui.App@679a561
+03-20 00:16:53.021 21285 21285 D AnimatorSet: mReversing is false. Don't call initChildren.
+03-20 00:16:53.027 21285 21285 D AnimatorSet: mReversing is false. Don't call initChildren.
+03-20 00:16:53.062 21285 21285 I BufferQueueProducer: [](id:532500000000,api:0,p:0,c:21285) setDequeueTimeout:2077252342
+03-20 00:16:53.063 21285 21285 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@3fe82dc[GUIConfigActivity] mNativeObject= 0xb40000708c1bce00 sc.mNativeObject= 0xb40000708c1b9380 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-20 00:16:53.063 21285 21285 I BLASTBufferQueue_Java: update, w= 1080 h= 2408 mName = ViewRootImpl@3fe82dc[GUIConfigActivity] mNativeObject= 0xb40000708c1bce00 sc.mNativeObject= 0xb40000708c1b9380 format= -1 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-20 00:16:53.064 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Relayout returned: old=(0,0,1080,2408) new=(0,0,1080,2408) relayoutAsync=false req=(1080,2408)0 dur=10 res=0x403 s={true 0xb40000708beb6800} ch=true seqId=0
+03-20 00:16:53.064 21285 21285 D ViewRootImpl@3fe82dc[GUIConfigActivity]: mThreadedRenderer.initialize() mSurface={isValid=true 0xb40000708beb6800} hwInitialized=true
+03-20 00:16:53.066 21285 21285 D AutofillManager: notifyViewEnteredForFillDialog:1073741824
+03-20 00:16:53.066 21285 21285 D AutofillManager: notifyViewEnteredForFillDialog:1073741825
+03-20 00:16:53.066 21285 21285 D AutofillManager: notifyViewEnteredForFillDialog:1073741826
+03-20 00:16:53.066 21285 21285 D AutofillManager: notifyViewEnteredForFillDialog:1073741827
+03-20 00:16:53.067 21285 21285 D ViewRootImpl@3fe82dc[GUIConfigActivity]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-20 00:16:53.068 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Setup new sync=wmsSync-ViewRootImpl@3fe82dc[GUIConfigActivity]#0
+03-20 00:16:53.068 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Creating new active sync group ViewRootImpl@3fe82dc[GUIConfigActivity]#1
+03-20 00:16:53.069 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: registerCallbacksForSync syncBuffer=false
+03-20 00:16:53.073 21285 21317 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-20 00:16:53.073 21285 21317 I ViewRootImpl@3fe82dc[GUIConfigActivity]: mWNT: t=0xb40000708c09ac80 mBlastBufferQueue=0xb40000708c1bce00 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-20 00:16:53.073 21285 21317 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Setting up sync and frameCommitCallback
+03-20 00:16:53.093 21285 21308 I BLASTBufferQueue: [ViewRootImpl@3fe82dc[GUIConfigActivity]#0](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-20 00:16:53.094 21285 21308 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-20 00:16:53.094 21285 21308 D OpenGLRenderer: CFMS:: SetUp Pid : 21285    Tid : 21308
+03-20 00:16:53.095 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: reportDrawFinished seqId=0
+03-20 00:16:53.096 21285 21285 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=com.termux.gui/com.termux.gui.GUIConfigActivity
+03-20 00:16:53.097 21285 21285 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=statusBars, host=com.termux.gui/com.termux.gui.GUIConfigActivity
+03-20 00:16:53.115 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: handleWindowFocusChanged: 1 0 call from android.view.ViewRootImpl.-$$Nest$mhandleWindowFocusChanged:0
+03-20 00:16:53.115 21285 21285 D ViewRootImpl@3fe82dc[GUIConfigActivity]: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb40000708beb6800}
+03-20 00:16:53.116 21285 21285 D InputMethodManagerUtils: startInputInner - Id : 0
+03-20 00:16:53.116 21285 21285 I InputMethodManager: startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+03-20 00:16:53.135 21285 21285 D InputMethodManagerUtils: startInputInner - Id : 0
+03-20 00:16:53.143 21285 21285 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=false, type=ime, host=com.termux.gui/com.termux.gui.GUIConfigActivity
+03-20 00:16:55.046 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: ViewPostIme pointer 0
+03-20 00:16:55.148 21285 21285 D AnimatorSet: mReversing is false. Don't call initChildren.
+03-20 00:16:55.167 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: ViewPostIme pointer 1
+03-20 00:16:55.232 21285 21285 D AnimatorSet: mReversing is false. Don't call initChildren.
+03-20 00:16:55.341 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: handleWindowFocusChanged: 0 0 call from android.view.ViewRootImpl.-$$Nest$mhandleWindowFocusChanged:0
+03-20 00:16:55.341 21285 21285 I ImeFocusController: onPreWindowFocus: skipped, hasWindowFocus=false mHasImeFocus=true
+03-20 00:16:55.341 21285 21285 I ImeFocusController: onPostWindowFocus: skipped, hasWindowFocus=false mHasImeFocus=true
+03-20 00:16:55.801 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: handleAppVisibility mAppVisible = true visible = false
+03-20 00:16:55.806 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: destroyHardwareResources: Callers=android.view.ViewRootImpl.performTraversals:3932 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 android.os.Handler.handleCallback:958 android.os.Handler.dispatchMessage:99 
+03-20 00:16:55.813 21285 21308 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-20 00:16:55.822 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Relayout returned: old=(0,0,1080,2408) new=(0,0,1080,2408) relayoutAsync=false req=(1080,2408)8 dur=8 res=0x402 s={false 0x0} ch=true seqId=0
+03-20 00:16:59.584 21285 21308 D OpenGLRenderer: CacheManager::trimMemory(10)
+03-20 00:17:00.001 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: stopped(true) old = false
+03-20 00:17:00.001 21285 21285 D ViewRootImpl@3fe82dc[GUIConfigActivity]: WindowStopped on com.termux.gui/com.termux.gui.GUIConfigActivity set to true
+03-20 00:17:00.001 21285 21308 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-20 00:17:00.075 21285 21308 D OpenGLRenderer: CacheManager::trimMemory(20)
+03-20 00:17:05.173 21285 21285 D InputTransport: Input channel destroyed: 'ClientS', fd=117
+03-20 00:17:10.613 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: handleAppVisibility mAppVisible = false visible = true
+03-20 00:17:10.640 21285 21285 D CompatibilityChangeReporter: Compat change id reported: 78294732; UID 10334; state: ENABLED
+03-20 00:17:10.641 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: stopped(false) old = true
+03-20 00:17:10.641 21285 21285 D ViewRootImpl@3fe82dc[GUIConfigActivity]: WindowStopped on com.termux.gui/com.termux.gui.GUIConfigActivity set to false
+03-20 00:17:10.747 21285 21285 I BufferQueueProducer: [](id:532500000001,api:0,p:114,c:21285) setDequeueTimeout:2077252342
+03-20 00:17:10.750 21285 21285 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= ViewRootImpl@3fe82dc[GUIConfigActivity] mNativeObject= 0xb40000708c1bce00 sc.mNativeObject= 0xb400007080c91480 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 
+03-20 00:17:10.750 21285 21285 I BLASTBufferQueue_Java: update, w= 1080 h= 2408 mName = ViewRootImpl@3fe82dc[GUIConfigActivity] mNativeObject= 0xb40000708c1bce00 sc.mNativeObject= 0xb400007080c91480 format= -1 caller= android.graphics.BLASTBufferQueue.<init>:89 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3028 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 
+03-20 00:17:10.752 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Relayout returned: old=(0,0,1080,2408) new=(0,0,1080,2408) relayoutAsync=false req=(1080,2408)0 dur=23 res=0x403 s={true 0xb40000708beb6800} ch=true seqId=0
+03-20 00:17:10.754 21285 21285 D ViewRootImpl@3fe82dc[GUIConfigActivity]: mThreadedRenderer.initialize() mSurface={isValid=true 0xb40000708beb6800} hwInitialized=true
+03-20 00:17:10.754 21285 21285 D ViewRootImpl@3fe82dc[GUIConfigActivity]: reportNextDraw android.view.ViewRootImpl.performTraversals:4718 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 
+03-20 00:17:10.755 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Setup new sync=wmsSync-ViewRootImpl@3fe82dc[GUIConfigActivity]#2
+03-20 00:17:10.755 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Creating new active sync group ViewRootImpl@3fe82dc[GUIConfigActivity]#3
+03-20 00:17:10.767 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: registerCallbacksForSync syncBuffer=false
+03-20 00:17:10.772 21285 21317 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Received frameDrawingCallback syncResult=0 frameNum=1.
+03-20 00:17:10.772 21285 21317 I ViewRootImpl@3fe82dc[GUIConfigActivity]: mWNT: t=0xb40000707ca5dc00 mBlastBufferQueue=0xb40000708c1bce00 fn= 1 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$8.onFrameDraw:13841 android.view.ThreadedRenderer$1.onFrameDraw:792 <bottom of call stack> 
+03-20 00:17:10.772 21285 21317 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Setting up sync and frameCommitCallback
+03-20 00:17:10.780 21285 21308 I BLASTBufferQueue: [ViewRootImpl@3fe82dc[GUIConfigActivity]#1](f:0,a:0,s:0) onFrameAvailable the first frame is available
+03-20 00:17:10.783 21285 21308 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+03-20 00:17:10.791 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: reportDrawFinished seqId=0
+03-20 00:17:10.794 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: onDisplayChanged oldDisplayState=2 newDisplayState=2
+03-20 00:17:10.806 21285 21285 D CompatibilityChangeReporter: Compat change id reported: 163400105; UID 10334; state: ENABLED
+03-20 00:17:10.823 21285 21285 I AssistStructure: Flattened final assist data: 3844 bytes, containing 1 windows, 15 views
+03-20 00:17:10.825 21285 21285 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=com.termux.gui/com.termux.gui.GUIConfigActivity
+03-20 00:17:10.826 21285 21285 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=statusBars, host=com.termux.gui/com.termux.gui.GUIConfigActivity
+03-20 00:17:10.929 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: handleWindowFocusChanged: 1 0 call from android.view.ViewRootImpl.-$$Nest$mhandleWindowFocusChanged:0
+03-20 00:17:10.929 21285 21285 D ViewRootImpl@3fe82dc[GUIConfigActivity]: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb40000708beb6800}
+03-20 00:17:10.937 21285 21285 D InputMethodManagerUtils: startInputInner - Id : 0
+03-20 00:17:10.937 21285 21285 I InputMethodManager: startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+03-20 00:17:10.955 21285 21285 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=false, type=ime, host=com.termux.gui/com.termux.gui.GUIConfigActivity
+03-20 00:17:10.959 21285 21296 I ViewRootImpl@3fe82dc[GUIConfigActivity]: Resizing android.view.ViewRootImpl@eff89a5: frame = [0,0][1080,2408] reportDraw = false forceLayout = false syncSeqId = -1
+03-20 00:17:10.965 21285 21285 I ViewRootImpl@3fe82dc[GUIConfigActivity]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,0][1080,2408] display=[0,0][1080,2408] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false

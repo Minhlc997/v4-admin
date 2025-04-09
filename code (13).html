@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMTeam Control Panel - Comprehensive</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* --- Comprehensive CSS --- */
+:root {
+            --zalo-blue: #0068FF;
+            --zalo-blue-dark: #0052CC;
+            --zalo-grey-bg: #eaedf0;
+            --zalo-text: #081c36;
+            --zalo-border: #dcdfe3;
+            --tool-bg-light: #f8f9fa;
+            --tool-bg-content: #ffffff;
+            --sidebar-width: 16rem;
+            --success-light: #e8f5e9;
+            --warning-light: #fff8e1;
+            --danger-light: #fdecea;
+            --secondary-light: #f1f3f4;
+        }
+        html, body {
+            height: 100%;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 14px;
+        }
+        #app-wrapper {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Sidebar */
+        #sidebar-wrapper {
+            width: var(--sidebar-width);
+            min-width: var(--sidebar-width);
+            height: 100vh;
+            background-color: var(--tool-bg-content);
+            border-right: 1px solid var(--zalo-border);
+            display: flex;
+            flex-direction: column;
+            transition: margin-left .25s ease-out;
+            margin-left: 0;
+        }
+        #sidebar-wrapper .sidebar-heading {
+            padding: 0.75rem 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-bottom: 1px solid var(--zalo-border);
+            color: var(--zalo-blue);
+        }
+        #sidebar-wrapper .list-group {
+            flex-grow: 1;
+            overflow-y: auto;
+            width: 100%;
+        }
+        .list-group-item {
+            border: none;
+            padding: 0.65rem 1rem;
+            font-size: 0.9rem;
+            color: #495057;
+        }
+        .list-group-item i.me-2 {
+            color: #6c757d;
+            width: 18px;
+            text-align: center;
+        }
+        .list-group-item-action:hover, .list-group-item-action:focus {
+            background-color: var(--zalo-grey-bg);
+            color: var(--zalo-blue);
+        }
+        .list-group-item.active {
+            background-color: var(--zalo-blue) !important;
+            color: white !important;
+            border-radius: 0.25rem;
+            margin: 0.1rem 0.5rem;
+            width: calc(var(--sidebar-width) - 1rem);
+        }
+        .list-group-item.active i.me-2 {
+            color: white;
+        }
+        .sub-menu a {
+            padding-left: 2.5rem !important;
+            font-size: 0.85rem;
+            background-color: #ffffff;
+        }
+        .sub-menu a:hover {
+            background-color: var(--zalo-grey-bg);
+        }
+        .list-group-item[aria-expanded="true"] {
+            background-color: var(--zalo-grey-bg);
+        }
+
+        /* Main Content Area */
+        #page-content-wrapper {
+            flex-grow: 1;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background-color: var(--zalo-grey-bg);
+        }
+
+        /* Header/Navbar */
+        .navbar {
+            background-color: var(--tool-bg-content) !important;
+            border-bottom: 1px solid var(--zalo-border);
+            padding: 0.4rem 1rem;
+            flex-shrink: 0;
+        }
+        #sidebarToggle {
+            margin-right: 0.5rem;
+            background: transparent;
+            border: none;
+            color: #6c757d;
+            font-size: 1.1rem;
+            padding: 0.25rem 0.5rem;
+        }
+        #sidebarToggle:hover {
+            color: var(--zalo-blue);
+        }
+        .navbar .nav-link {
+            padding: 0.3rem 0.5rem;
+            font-size: 0.9rem;
+        }
+        .navbar-text {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        #account-summary-header strong {
+            color: var(--zalo-text);
+        }
+
+        /* View Toolbar */
+        #view-toolbar {
+            background-color: var(--tool-bg-light);
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid var(--zalo-border);
+            flex-shrink: 0;
+            min-height: 50px;
+        }
+        #view-toolbar .btn-sm {
+            font-size: 0.8rem;
+            padding: 0.25rem 0.6rem;
+        }
+        #view-toolbar .btn-sm i {
+            margin-right: 4px;
+        }
+
+        /* Main Content Scrollable Area */
+        #main-view-content {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 1rem;
+            background-color: var(--tool-bg-content);
+        }
+        #main-view-content h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        #main-view-content h5 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+        .config-box {
+            border: 1px solid var(--zalo-border);
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            background-color: #fff;
+            border-radius: 3px;
+        }
+        .form-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+            display: inline-block;
+        }
+        .form-control, .form-select {
+            font-size: 0.85rem;
+            border-color: var(--zalo-border);
+            border-radius: 3px;
+        }
+        .form-control-sm, .input-group-sm > .form-control {
+            font-size: 0.85rem;
+            padding: 0.25rem 0.5rem;
+        }
+        .table th, .table td {
+            font-size: 0.85rem;
+            padding: 0.5rem;
+            border-color: var(--zalo-border);
+            vertical-align: middle;
+        }
+        .table th {
+            background-color: #f8f9fa;
+            font-weight: 500;
+        }
+        .table-hover tbody tr:hover {
+            background-color: var(--zalo-grey-bg);
+        }
+        .card {
+            border: 1px solid var(--zalo-border);
+            box-shadow: none;
+            border-radius: 3px;
+            margin-bottom: 1rem;
+        }
+        .card-header {
+            background-color: #f8f9fa;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid var(--zalo-border);
+        }
+        .card-body {
+            padding: 0.8rem;
+        }
+        .nav-tabs {
+            border-bottom: 1px solid var(--zalo-border);
+            margin-bottom: 1rem;
+        }
+        .nav-tabs .nav-link {
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            color: #6c757d;
+            border: 1px solid transparent;
+            border-bottom: none;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+        }
+        .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+            color: var(--zalo-blue);
+            background-color: var(--tool-bg-content);
+            border-color: var(--zalo-border) var(--zalo-border) var(--tool-bg-content);
+            border-bottom: 1px solid var(--tool-bg-content);
+            margin-bottom: -1px;
+        }
+        .tab-content {
+            /* No extra border needed if content inside cards/boxes */ padding: 0;
+        }
+
+        /* Status Bar */
+        #status-bar {
+            background-color: var(--tool-bg-light);
+            padding: 0.3rem 1rem;
+            border-top: 1px solid var(--zalo-border);
+            font-size: 0.8rem;
+            color: #6c757d;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #status-message {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Zalo Account Pane (Dashboard) */
+        .zalo-account-pane {
+            border: 1px solid var(--zalo-border);
+            border-radius: 5px;
+            background-color: #fff;
+            margin-bottom: 1rem;
+            transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            min-height: 220px;
+        }
+        .zalo-account-pane:hover {
+            box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .1);
+        }
+        .zalo-account-pane.status-online {
+            background-color: var(--success-light);
+            border-left: 3px solid #198754;
+        }
+        .zalo-account-pane.status-offline {
+            background-color: var(--secondary-light);
+            border-left: 3px solid #6c757d;
+        }
+        .zalo-account-pane.status-error {
+            background-color: var(--danger-light);
+            border-left: 3px solid #dc3545;
+        }
+        .zalo-account-pane.status-warning {
+            background-color: var(--warning-light);
+            border-left: 3px solid #ffc107;
+        }
+        .pane-header {
+            padding: 0.6rem 0.8rem;
+            border-bottom: 1px solid var(--zalo-border);
+            display: flex;
+            align-items: center;
+        }
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            background-color: #e0e0e0;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #aaa;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+        .account-info {
+            flex-grow: 1;
+        }
+        .account-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--zalo-text);
+            margin-bottom: 0;
+            display: block;
+        }
+        .account-phone {
+            font-size: 0.8rem;
+            color: #6c757d;
+            margin-bottom: 0;
+        }
+        .pane-body {
+            padding: 0.8rem;
+            font-size: 0.8rem;
+            color: #495057;
+            flex-grow: 1;
+        }
+        .account-status {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .account-status .badge {
+            font-size: 0.75rem;
+            vertical-align: middle;
+        }
+        .account-details span {
+            margin-right: 10px;
+            display: inline-block;
+            margin-bottom: 3px;
+        }
+
+        .account-details i {
+            margin-right: 3px;
+            color: #6c757d;
+            width: 12px;
+            text-align: center;
+        }
+        .pane-footer {
+            padding: 0.5rem 0.8rem;
+            border-top: 1px solid var(--zalo-border);
+            background-color: rgba(248,249,250, 0.5);
+        }
+        .pane-footer .btn-group .btn, .pane-footer .btn {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+        }
+
+        /* General Styles */
+        .help-icon {
+            font-size: 0.9em;
+            margin-left: 4px;
+            cursor: help;
+            vertical-align: middle;
+            color: #6c757d;
+        }
+        #app-wrapper.sidebar-toggled #sidebar-wrapper {
+            margin-left: calc(-1 * var(--sidebar-width));
+        }
+        .btn-xs {
+            padding: 0.15rem 0.4rem;
+            font-size: 0.7rem;
+        }
+        .text-nowrap {
+            white-space: nowrap;
+        }
+        .table img.avatar-xs {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        /* Zalo Colors */
+        .btn-primary {
+            background-color: var(--zalo-blue) !important;
+            border-color: var(--zalo-blue) !important;
+            color: white !important;
+            font-weight: 500;
+        }
+        .btn-primary:hover {
+            background-color: var(--zalo-blue-dark) !important;
+            border-color: var(--zalo-blue-dark) !important;
+        }
+        .text-primary {
+            color: var(--zalo-blue) !important;
+        }
+        a {
+            color: var(--zalo-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--zalo-blue-dark);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="app-wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="sidebar-heading">
+                CMTeam Panel
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action" data-view="dashboard"><i class="fas fa-tachometer-alt me-2"></i>Bảng điều khiển</a>
+                <a href="#" class="list-group-item list-group-item-action" data-view="profile-mgmt"><i class="fas fa-id-card me-2"></i>Quản lý Profile</a>
+                <a href="#" class="list-group-item list-group-item-action" data-view="proxy-api"><i class="fas fa-server me-2"></i>Cấu hình Proxy/API</a>
+                <a href="#" class="list-group-item list-group-item-action" data-view="quanly-tk"><i class="fas fa-user-cog me-2"></i>Quản lý Tài khoản</a>
+                <a href="#submenu-ketban" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <span><i class="fas fa-user-plus me-2"></i>Chức năng kết bạn</span><i class="fas fa-chevron-down small"></i>
+                </a>
+                <div class="collapse sub-menu" id="submenu-ketban">
+                    <a href="#" class="list-group-item list-group-item-action" data-view="ketban-sdt"><i class="fas fa-mobile-alt me-2"></i>Kết bạn theo SĐT</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-view="ketban-nhom"><i class="fas fa-users me-2"></i>Kết bạn trong nhóm</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-view="ketban-goiy"><i class="fas fa-lightbulb me-2"></i>Kết bạn theo gợi ý</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-view="thuhoi-ketban"><i class="fas fa-undo me-2"></i>Thu hồi lời kết bạn</a>
+                </div>
+                <a href="#submenu-nhom" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <span><i class="fas fa-users-cog me-2"></i>Chức năng nhóm</span><i class="fas fa-chevron-down small"></i>
+                </a>
+                <div class="collapse sub-menu" id="submenu-nhom">
+                    <a href="#" class="list-group-item list-group-item-action" data-view="thamgia-nhom"><i class="fas fa-sign-in-alt me-2"></i>Tham gia nhóm</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-view="moi-ban-vao-nhom"><i class="fas fa-user-plus me-2"></i>Mời bạn vào nhóm</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-view="nhantin-vao-nhom"><i class="fas fa-paper-plane me-2"></i>Nhắn tin vào nhóm</a>
+                </div>
+                <a href="#" class="list-group-item list-group-item-action" data-view="chucnang-nhantin"><i class="fas fa-comments me-2"></i>Chức năng nhắn tin</a>
+                <a href="#" class="list-group-item list-group-item-action" data-view="quanly-lichsu"><i class="fas fa-history me-2"></i>Quản lý lịch sử</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content Wrapper -->
+        <div id="page-content-wrapper">
+
+            <!-- Header/Navbar -->
+            <nav class="navbar navbar-expand navbar-light">
+                <button class="btn" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+                <span class="navbar-text ms-2 fw-bold" id="view-title">Bảng điều khiển</span>
+                <span class="navbar-text ms-auto me-3" id="account-summary-header">
+                    <i class="fas fa-users me-1"></i> Quản lý: <strong id="total-accounts">0</strong> TK
+                    (<span class="text-success" id="online-accounts">0</span> Onl,
+                    <span class="text-secondary" id="offline-accounts">0</span> Off,
+                    <span class="text-danger" id="error-accounts">0</span> Lỗi,
+                    <span class="text-warning" id="warning-accounts">0</span> Chờ)
+                </span>
+                <ul class="navbar-nav align-items-center">
+                    /* Icons + User Dropdown */
+                </ul>
+            </nav>
+            <!-- /Header/Navbar -->
+
+            <!-- View Specific Toolbar -->
+            <div id="view-toolbar" class="d-flex align-items-center gap-2"></div>
+            <!-- /View Specific Toolbar -->
+
+            <!-- Main Content Area (Scrollable) -->
+            <div id="main-view-content">
+
+                <!-- View: Dashboard (Client Panes) -->
+                <div id="dashboard-view" class="view-content">
+                    <h3 class="mb-3 visually-hidden">Tổng quan Client</h3>
+                    <div class="row" id="dashboard-panes-container">
+                        <!-- Account Panes will be loaded here by JS or manually placed -->
+                        <!-- Example Pane (repeat for others) -->
+                        <div class="col-xl-4 col-lg-6 col-md-12">
+                            <div class="zalo-account-pane status-online" data-account-id="alpha">
+                                /* ... Pane content ... */
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-12">
+                            <div class="zalo-account-pane status-warning" data-account-id="beta">
+                                /* ... Pane content ... */
+                            </div>
+                        </div>
+                        <!-- ... More panes ... -->
+                    </div>
+                </div>
+
+                <!-- View: Profile Management -->
+                <div id="profile-mgmt-view" class="view-content" style="display: none;">
+                    <h3 class="mb-3">Quản lý Profile Client</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover table-sm align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th><input class="form-check-input" type="checkbox" title="Chọn/Bỏ chọn tất cả"></th>
+                                    <th>STT</th>
+                                    <th>Tên Profile <i class="fas fa-question-circle help-icon" data-bs-toggle="tooltip" title="Tên gợi nhớ cho profile Zalo này."></i></th>
+                                    <th>Số điện thoại</th>
+                                    <th>Trạng thái <i class="fas fa-question-circle help-icon" data-bs-toggle="tooltip" title="Trạng thái đăng nhập hiện tại của tài khoản."></i></th>
+                                    <th>Proxy <i class="fas fa-question-circle help-icon" data-bs-toggle="tooltip" title="Proxy được gán cho profile này (nếu có)."></i></th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Rows from previous example -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <nav>
+                        /* Pagination */
+                    </nav>
+                </div>
+
+                <!-- View: Proxy/API -->
+                <div id="proxy-api-view" class="view-content" style="display: none;">
+                    <h3 class="mb-3">Cấu hình Proxy & API</h3>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card mb-4">
+                                /* Proxy List Table */
+                            </div>
+                            <div class="card mb-4">
+                                /* API Key Inputs */
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                /* General Proxy Options */
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View: Quản lý Tài khoản (Tabbed) -->
+                <div id="quanly-tk-view" class="view-content" style="display: none;">
+                    <h3 class="mb-3">Quản lý Chi tiết Tài khoản Zalo</h3>
+                    <div class="alert alert-info small p-2" role="alert">
+                        <i class="fas fa-info-circle me-1"></i> Chọn một tài khoản đang Online từ Bảng điều khiển hoặc Quản lý Profile để xem chi tiết. Dữ liệu dưới đây là ví dụ.
+                    </div>
+                    <nav>
+                        <div class="nav nav-tabs" id="zaloDetailTab" role="tablist">
+                            <button class="nav-link active" id="nav-friends-tab" data-bs-toggle="tab" data-bs-target="#nav-friends" type="button" role="tab" aria-controls="nav-friends" aria-selected="true"><i class="fas fa-user-friends me-1"></i>Danh sách bạn bè</button>
+                            <button class="nav-link" id="nav-requests-tab" data-bs-toggle="tab" data-bs-target="#nav-requests" type="button" role="tab" aria-controls="nav-requests" aria-selected="false"><i class="fas fa-user-plus me-1"></i>Lời mời kết bạn</button>
+                            <button class="nav-link" id="nav-search-tab" data-bs-toggle="tab" data-bs-target="#nav-search" type="button" role="tab" aria-controls="nav-search" aria-selected="false"><i class="fas fa-search me-1"></i>Tìm & Thêm bạn</button>
+                            <button class="nav-link" id="nav-groups-tab" data-bs-toggle="tab" data-bs-target="#nav-groups" type="button" role="tab" aria-controls="nav-groups" aria-selected="false"><i class="fas fa-users me-1"></i>Nhóm đã tham gia</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content pt-3" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-friends" role="tabpanel" aria-labelledby="nav-friends-tab">
+                            <h5>Danh sách bạn bè (<span id="friend-count">123</span>)</h5>
+                            <div class="mb-2">
+                                <button class="btn btn-sm btn-primary"><i class="fas fa-sync-alt me-1"></i> Tải lại DS</button>
+                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-file-excel me-1"></i> Xuất Excel</button>
+                                <input type="text" class="form-control form-control-sm d-inline-block ms-3 w-auto" placeholder="Tìm bạn...">
+                            </div>
+                            <div class="table-responsive" style="max-height: 400px;">
+                                <table class="table table-sm table-striped table-hover">
+                                    <thead>
+                                        <tr><th><input type="checkbox"></th><th>Avatar</th><th>Tên Zalo</th><th>UID</th><th>Trạng thái</th><th>Hành động</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td><input type="checkbox"></td><td><img src="avatar_placeholder.png" class="avatar-xs" alt=""></td><td>Nguyễn Văn A</td><td>849...</td><td>Bạn bè</td><td><button class="btn btn-xs btn-outline-primary" title="Gửi tin nhắn"><i class="fas fa-comment-dots"></i></button> <button class="btn btn-xs btn-outline-danger" title="Hủy kết bạn"><i class="fas fa-user-minus"></i></button></td></tr>
+                                        <!-- More friend rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-requests" role="tabpanel" aria-labelledby="nav-requests-tab">
+                            <h5>Lời mời đã nhận (<span id="request-count">5</span>)</h5>
+                            <div class="mb-2">
+                                <button class="btn btn-sm btn-success"><i class="fas fa-check me-1"></i> Đồng ý chọn</button>
+                                <button class="btn btn-sm btn-danger"><i class="fas fa-times me-1"></i> Từ chối chọn</button>
+                                <button class="btn btn-sm btn-primary ms-2"><i class="fas fa-sync-alt me-1"></i> Tải lại</button>
+                            </div>
+                            <!-- Table for friend requests -->
+                        </div>
+                        <div class="tab-pane fade" id="nav-search" role="tabpanel" aria-labelledby="nav-search-tab">
+                            <h5>Tìm kiếm và Thêm bạn bè</h5>
+                            <div class="input-group input-group-sm mb-3">
+                                <input type="text" class="form-control" placeholder="Nhập SĐT hoặc Zalo ID">
+                                <button class="btn btn-outline-primary" type="button"><i class="fas fa-search me-1"></i> Tìm kiếm</button>
+                            </div>
+                            <!-- Search results table -->
+                        </div>
+                        <div class="tab-pane fade" id="nav-groups" role="tabpanel" aria-labelledby="nav-groups-tab">
+                            <h5>Các nhóm đã tham gia (<span id="group-count">56</span>)</h5>
+                            <div class="mb-2">
+                                <button class="btn btn-sm btn-primary"><i class="fas fa-sync-alt me-1"></i> Tải lại DS Nhóm</button>
+                                <input type="text" class="form-control form-control-sm d-inline-block ms-3 w-auto" placeholder="Tìm nhóm...">
+                            </div>
+                            <!-- Table of joined groups -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View: Kết bạn theo SĐT -->
+                <div id="ketban-sdt-view" class="view-content" style="display: none;">
+                    <h3 class="mb-3">Kết bạn theo SĐT</h3>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="config-box">
+                                /* Detailed config form from previous examples */
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="card mb-3">
+                                /* Account List */
+                            </div>
+                            <div class="card">
+                                /* Phone Number List Input */
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Views: ketban-nhom, ketban-goiy, thuhoi-ketban -->
+                <div id="ketban-nhom-view" class="view-content" style="display: none;">
+                    <h3 class="mb-3">Kết bạn trong nhóm</h3> /* Config form + Member list */
+                </div>
+                <div id="ketban-goiy-view" class="view-content" style="display: none;">
+                    <h3 class="mb-3">Kết bạn theo gợi ý</h3> /* Config form */
+                </div>
+                <div id="thuhoi-ketban-view" class="view-content" style="display: none;">
+                    <h3 class="mb-3">Thu hồi lời kết bạn</h3> /* Table of sent requests + Action buttons */
+                </div>
+
+                <!-- Views: thamgia-nhom, moi-ban-vao-nhom, nhantin-vao-nhom -->
+                <div id="thamgia-nhom-view" class="view-content" style="display: none;">
+                    <h3 class="mb-3">Tham gia nhóm</h3> /* Config form + Group link input */
+                </div>
+                <div id="moi-ban-vao-nhom-view" class="view-content" style="display: none;">
+                    <h3 class="mb-3">Mời bạn vào nhóm</h3> /* Group selection + Friend selection table + Config */
+                </div>
+                <div id="nhantin-vao-nhom-view" class="view-content" style="display: none;">
+                    <h3 class="mb-3">Nhắn tin vào nhóm</h3> /* Group selection + Message input (spin) + Config */
+                </div>
+
+                <!-- Views: chucnang-nhantin, quanly-lichsu -->
+                <div id="chucnang-nhantin-view" class="view-content" style="display: none;">
+                    <h3 class="mb-3">Chức năng nhắn tin</h3>
+                    <p>
+                        Gửi tin nhắn hàng loạt đến bạn bè hoặc danh sách SĐT.
+                    </p>
+                    <!-- Basic config form for messaging -->
+                </div>
+                <div id="quanly-lichsu-view" class="view-content" style="display: none;">
+                    <h3 class="mb-3">Quản lý lịch sử</h3>
+                    <p>
+                        Xem lại nhật ký các hành động đã thực hiện.
+                    </p>
+                    <!-- Placeholder for log table -->
+                    <div class="table-responsive">
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr><th>Thời gian</th><th>Hành động</th><th>Tài khoản</th><th>Đối tượng</th><th>Kết quả</th><th>Chi tiết</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>2023-11-10 10:30:00</td><td>Kết bạn SĐT</td><td>Account Alpha</td><td>09xxxxxx99</td><td><span class="badge bg-success">Thành công</span></td><td><a href="#">Xem</a></td></tr>
+                                <tr><td>2023-11-10 10:29:00</td><td>Tham gia nhóm</td><td>Account Beta</td><td>Link nhóm ABC</td><td><span class="badge bg-warning">Chờ duyệt</span></td><td><a href="#">Xem</a></td></tr>
+                                <!-- More log entries -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /Main Content Area -->
+
+            <!-- Status Bar -->
+            <div id="status-bar">
+                <span id="status-message">Sẵn sàng.</span>
+                <span id="app-version" class="small">v1.1.0 Comprehensive</span>
+            </div>
+            <!-- /Status Bar -->
+
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#app-wrapper -->
+
+    <!-- Modals -->
+    <div class="modal fade" id="proxyModal" tabindex="-1">
+        /* Proxy Modal content */
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        /* Login Modal content */
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Elements ---
+            const wrapper = document.getElementById('app-wrapper');
+            const sidebarToggle = document.getElementById('sidebarToggle');
+            const viewTitleEl = document.getElementById('view-title');
+            const viewToolbarEl = document.getElementById('view-toolbar');
+            const statusMessageEl = document.getElementById('status-message');
+            const totalAccountsEl = document.getElementById('total-accounts');
+            const onlineAccountsEl = document.getElementById('online-accounts');
+            const offlineAccountsEl = document.getElementById('offline-accounts');
+            const errorAccountsEl = document.getElementById('error-accounts');
+            const warningAccountsEl = document.getElementById('warning-accounts');
+
+            // --- Initialize Tooltips ---
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl, {
+                    html: true, boundary: document.body
+                });
+            });
+
+            // --- Sidebar Toggle ---
+            if (sidebarToggle) {
+                sidebarToggle.addEventListener('click', e => {
+                    e.preventDefault(); wrapper.classList.toggle('sidebar-toggled');
+                });
+            }
+
+            // --- Status Bar ---
+            function setStatusMessage(message, type = 'info', duration = 4000) {
+                /* ... as before ... */
+            }
+
+            // --- Update Account Counts ---
+            function updateAccountCounts() {
+                /* ... simulated counts as before ... */
+            }
+
+            // --- Toolbar Definitions ---
+            const toolbars = {
+                'dashboard': `
+                <button class="btn btn-sm btn-outline-secondary" onclick="setStatusMessage('Đang làm mới trạng thái các tài khoản...','info')"><i class="fas fa-sync-alt"></i> Làm mới</button>
+                <button class="btn btn-sm btn-primary ms-auto" onclick="setStatusMessage('Mở cửa sổ thêm profile mới.')"><i class="fas fa-plus"></i> Thêm Profile</button>
+                `,
+                'profile-mgmt': `
+                <button class="btn btn-sm btn-primary"><i class="fas fa-plus"></i> Thêm</button>
+                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-file-import"></i> Import</button>
+                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-file-export"></i> Export</button>
+                <button class="btn btn-sm btn-success ms-auto"><i class="fas fa-sign-in-alt"></i> Đăng nhập chọn</button>
+                <button class="btn btn-sm btn-danger"><i class="fas fa-sign-out-alt"></i> Đăng xuất chọn</button>
+                <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash-alt"></i> Xóa chọn</button>
+                `,
+                'proxy-api': `
+                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#proxyModal"><i class="fas fa-plus"></i> Thêm Proxy</button>
+                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-file-import"></i> Import</button>
+                <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash-alt"></i> Xóa chọn</button>
+                <button class="btn btn-sm btn-outline-success ms-auto"><i class="fas fa-check-circle"></i> Kiểm tra chọn</button>
+                <button class="btn btn-sm btn-primary"><i class="fas fa-save"></i> Lưu API & Cài đặt</button>
+                `,
+                'quanly-tk': `
+                <button class="btn btn-sm btn-primary"><i class="fas fa-sync-alt"></i> Tải lại dữ liệu</button>
+                <span class="ms-auto small text-muted">Dữ liệu cho tài khoản: <strong id="current-detail-account">N/A</strong></span>
+                `,
+                'ketban-sdt': `
+                <button class="btn btn-sm btn-success" onclick="setStatusMessage('Bắt đầu kết bạn theo SĐT.','success')"><i class="fas fa-play"></i> Bắt đầu</button>
+                <button class="btn btn-sm btn-danger" onclick="setStatusMessage('Đã dừng kết bạn theo SĐT.','warning')"><i class="fas fa-stop"></i> Dừng lại</button>
+                <button class="btn btn-sm btn-outline-secondary ms-auto"><i class="fas fa-folder-open"></i> Tải Cấu hình</button>
+                <button class="btn btn-sm btn-outline-primary"><i class="fas fa-save"></i> Lưu Cấu hình</button>
+                `,
+                'ketban-nhom': ` <button class="btn btn-sm btn-success"><i class="fas fa-play"></i> Bắt đầu</button> <button class="btn btn-sm btn-danger"><i class="fas fa-stop"></i> Dừng</button> /* ... */`,
+                'thamgia-nhom': ` <button class="btn btn-sm btn-success"><i class="fas fa-play"></i> Bắt đầu</button> <button class="btn btn-sm btn-danger"><i class="fas fa-stop"></i> Dừng</button> /* ... */`,
+                'nhantin-vao-nhom': ` <button class="btn btn-sm btn-success"><i class="fas fa-play"></i> Bắt đầu Gửi</button> <button class="btn btn-sm btn-danger"><i class="fas fa-stop"></i> Dừng</button> /* ... */`,
+                'chucnang-nhantin': ` <button class="btn btn-sm btn-success"><i class="fas fa-paper-plane"></i> Bắt đầu Gửi</button> <button class="btn btn-sm btn-danger"><i class="fas fa-stop"></i> Dừng</button> /* ... */`,
+                'quanly-lichsu': ` <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-filter"></i> Lọc</button> <button class="btn btn-sm btn-outline-danger ms-auto"><i class="fas fa-trash-alt"></i> Xóa Log</button>`,
+                'default': '<span></span>'
+            };
+
+            // --- View Switching ---
+            const sidebarLinks = document.querySelectorAll('#sidebar-wrapper .list-group-item[data-view]');
+            const contentViews = document.querySelectorAll('#main-view-content .view-content');
+            const defaultViewId = 'dashboard';
+
+            function switchView(targetViewId, linkElement) {
+                contentViews.forEach(view => view.style.display = 'none');
+                const targetView = document.getElementById(targetViewId + '-view');
+                let currentTitle = "CMTeam Panel";
+                if (linkElement) {
+                    currentTitle = linkElement.querySelector('span') ? linkElement.querySelector('span').textContent.trim(): linkElement.textContent.trim();
+                }
+
+                if (targetView) {
+                    targetView.style.display = 'block';
+                    if (viewTitleEl) viewTitleEl.textContent = currentTitle;
+                    if (viewToolbarEl) viewToolbarEl.innerHTML = toolbars[targetViewId] || toolbars['default'];
+                    setStatusMessage(`Đã mở mục: ${currentTitle}`, 'info', 2000);
+                } else {
+                    const defaultView = document.getElementById(defaultViewId + '-view');
+                    if (defaultView) defaultView.style.display = 'block';
+                    if (viewTitleEl) viewTitleEl.textContent = 'Bảng điều khiển';
+                    if (viewToolbarEl) viewToolbarEl.innerHTML = toolbars[defaultViewId] || toolbars['default'];
+                    setStatusMessage('Không tìm thấy mục, hiển thị Bảng điều khiển.', 'warning');
+                    targetViewId = defaultViewId;
+                }
+                sidebarLinks.forEach(lnk => {
+                    lnk.classList.toggle('active', lnk.getAttribute('data-view') === targetViewId);
+                });
+
+                // Re-initialize tooltips for the new toolbar content
+                tooltipList.forEach(tooltip => tooltip.dispose()); // Dispose existing
+                tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+                tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl, {
+                        html: true, boundary: document.body
+                    });
+                });
+            }
+
+            // --- Simulate Account Actions ---
+            window.runAccountAction = function(accountId, action) {
+                /* ... as before ... */
+            }
+
+            // --- Event Listeners & Initial Load ---
+            sidebarLinks.forEach(link => {
+                /* ... as before ... */
+            });
+            const initialActiveLink = document.querySelector(`.list-group-item[data-view="${defaultViewId}"]`);
+            switchView(defaultViewId, initialActiveLink);
+            updateAccountCounts();
+            setStatusMessage('Hệ thống đã khởi động và sẵn sàng.', 'success');
+
+            // --- Placeholder actions for other buttons ---
+            document.body.addEventListener('click', function(e) {
+                // Simple placeholder for buttons without specific JS function yet
+                if (e.target.matches('#view-toolbar button:not([data-bs-toggle]), #main-view-content button:not([data-bs-toggle]):not([onclick*="runAccountAction"])')) {
+                    const btnText = e.target.textContent.trim() || e.target.title || 'Nút';
+                    if (!e.target.closest('.modal')) {
+                        // Don't show status for modal buttons
+                        setStatusMessage(`Đã nhấp: ${btnText}`, 'info', 1500);
+                    }
+                }
+            });
+
+            // --- Other JS (SelectAll, Modals) ---
+            // function setupSelectAll(...) { /* ... */ }
+            // Modal listeners { /* ... */ }
+
+        }); // End DOMContentLoaded
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi AutoPay</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 20px;
+            color: #333; /* Default text color for better readability */
+        }
+
+        .container {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .pi-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .pi-logo {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .pi-title {
+            color: #343a40;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .pi-button {
+            background-color: #8250c8;
+            color: white;
+            border: none;
+            border-radius: 0.25rem;
+            padding: 0.5rem 1rem;
+        }
+
+        .pi-button:hover {
+            background-color: #6a41a8;
+        }
+
+        .btn-danger {
+            border-radius: 0.25rem;
+            padding: 0.5rem 1rem;
+        }
+
+        .card {
+            border-radius: 0.5rem;
+            border: none;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            margin-bottom: 20px;
+        }
+
+        .card-body {
+            padding: 1.25rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control {
+            border-radius: 0.25rem;
+            border: 1px solid #ced4da;
+        }
+
+        .form-control:focus {
+            border-color: #8250c8;
+            box-shadow: 0 0 0 0.2rem rgba(130, 80, 200, 0.25);
+        }
+
+        .status-box {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            background-color: #fff;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            text-align: center;
+            color: #5a5a5a;
+            font-style: italic;
+        }
+
+        .status-success {
+            color: green;
+        }
+
+        .status-error {
+            color: red;
+        }
+
+        .transaction-history {
+            margin-top: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            padding: 1.25rem;
+            background-color: #fff;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+
+        .transaction-history h4 {
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #343a40;
+        }
+
+        .transaction-item {
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed #ced4da;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .transaction-item:last-child {
+            border-bottom: none;
+        }
+
+        .transaction-time {
+            font-size: 0.875rem;
+            color: #6c757d;
+            margin-right: 1rem;
+            flex-basis: auto;
+        }
+
+        .transaction-message {
+            flex-grow: 1;
+            word-break: break-word;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 576px) {
+            .container {
+                max-width: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .pi-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .pi-logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Style for Settings Page (initially hidden) */
+        #settingsPage {
+            display: none;
+        }
+
+        #mainPage {
+            display: block;
+        }
+
+        /* Cryptodarks Branding */
+        .cryptodarks-branding {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #777; /* Muted color for branding */
+        }
+
+        .cryptodarks-branding img {
+            width: 20px; /* Small logo size */
+            height: auto;
+            margin-right: 5px;
+        }
+
+        /* About Us Section */
+        .about-us-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            border: 1px solid #ced4da;
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .about-us-section h5 {
+            font-weight: bold;
+            color: #343a40;
+            margin-bottom: 15px;
+        }
+
+        .about-us-section p {
+            margin-bottom: 10px;
+        }
+
+        .copyright {
+            margin-top: 15px;
+            text-align: center;
+            color: #777;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="mainPage">
+        <div class="pi-header">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" fill="none" class="pi-logo text-secondary-500">
+                <path fill="currentColor" d="M94.91 66.314c0-1.078.875-1.953 1.954-1.953h18.878c1.079 0 1.953.875 1.953 1.953v14.973a1.953 1.953 0 0 1-1.953 1.953H96.863a1.953 1.953 0 0 1-1.953-1.953V66.314ZM133.97 66.314c0-1.078.875-1.953 1.953-1.953h18.879c1.079 0 1.953.875 1.953 1.953v14.973a1.953 1.953 0 0 1-1.953 1.953h-18.879a1.953 1.953 0 0 1-1.953-1.953V66.314Z"></path>
+                <path fill="currentColor" d="M94.91 115.616v77.765l22.785 8.992v-86.757h16.275v77.765l22.785 8.992v-86.757h15.14c12.491 0 22.618-10.234 22.618-22.858V79.985h-22.618v12.773H80.422c-12.492 0-22.618 10.234-22.618 22.858v15.798h22.618v-15.798h14.489Z"></path>
+                <path fill="currentColor" fill-rule="evenodd" d="M130.122 20.75c-60.368 0-109.305 48.937-109.305 109.305 0 60.367 48.937 109.305 109.305 109.305 60.367 0 109.305-48.938 109.305-109.305 0-60.368-48.938-109.305-109.305-109.305ZM.943 130.055C.943 58.711 58.778.875 130.122.875c71.343 0 129.178 57.836 129.178 129.18 0 71.343-57.835 129.178-129.178 129.178C58.778 259.233.943 201.398.943 130.055Z" clip-rule="evenodd"></path>
+            </svg>
+            <h2 class="pi-title">Pi AutoPay</h2>
+            <div class="cryptodarks-branding">
+                <!-- Replace 'cryptodarks-logo.png' with your logo image if you have one -->
+                <!-- <img src="cryptodarks-logo.png" alt="Cryptodarks Logo"> -->
+                <span>by <a href="https://cryptodarks.com" target="_blank" style="color: inherit; text-decoration: none;">Cryptodarks.com</a></span>
+            </div>
+        </div>
+
+        <div class="status-box">
+            Đã triển khai API, ứng dụng sẽ mất một lúc để hoạt động bình thường.
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="walletSeed">Kí tự ví Pi</label>
+                    <input type="password" class="form-control" id="walletSeed" placeholder="Nhập kí tự ví của bạn">
+                    <small class="form-text text-muted">Đây là ví. Trong ứng dụng Pi App thực tế, xác thực ví Pi sẽ được xử lý.</small>
+                </div>
+                <div class="form-group">
+                    <label for="recipientWallet">Ví nhận tự động</label>
+                    <input type="text" class="form-control" id="recipientWallet" placeholder="Nhập địa chỉ ví Pi cần chuyển tự động">
+                </div>
+                <div class="form-group">
+                    <label for="piAmount">Số lượng Pi</label>
+                    <input type="number" class="form-control" id="piAmount" value="0.1" min="0.000001" step="0.000001">
+                    <small class="form-text text-muted">Số lượng Pi cần chuyển mỗi lần (tối thiểu 0.000001 Pi).</small>
+                </div>
+                <div class="form-group">
+                    <label for="delay">Delay tối thiểu (giây)</label>
+                    <input type="number" class="form-control" id="delay" value="1.2" min="1.2" step="0.1">
+                    <small class="form-text text-muted">Thời gian chờ tối thiểu giữa các lần thanh toán (tối thiểu 1.2 giây).</small>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="blockchainCheckbox">
+                    <label class="form-check-label" for="blockchainCheckbox"> Blockchain</label>
+                    <small class="form-text text-muted">Chọn để tra cứu giao dịch trên blockchain (chỉ hiển thị).</small>
+                </div>
+                <button id="startButton" class="btn btn-block pi-button">Bắt đầu</button>
+                <button id="stopButton" class="btn btn-block btn-danger mt-2" style="display: none;">Dừng lại</button>
+                <button id="settingsButton" class="btn btn-block pi-button mt-3">Cài đặt</button>
+            </div>
+        </div>
+
+        <div class="transaction-history mt-4">
+            <h4>Lịch sử giao dịch</h4>
+            <div id="transactionList"></div>
+        </div>
+
+        <!-- About Us Section -->
+        <div class="about-us-section mt-4">
+            <h5>Về Pi AutoPay</h5>
+            <p>Pi AutoPay là công cụ thanh toán tự động Pi, được phát triển bởi <a href="https://cryptodarks.com" target="_blank" style="color: #8250c8; font-weight: bold; text-decoration: none;">Cryptodarks.com</a>. Công cụ này giúp bạn cách thức hoạt động của thanh toán Pi tự động trong một ứng dụng Pi Network.</p>
+            <p>Lưu ý: Đây là phiên bản bản quyền Pi thực tế trên blockchain Pi Network. Để tích hợp thanh toán Pi, bạn cần sử dụng Pi SDK trong ứng dụng Pi App </p>
+            <p class="copyright">© 2024 Cryptodarks.com. All rights reserved.</p>
+        </div>
+
+    </div>
+
+    <!-- Settings Page (Hidden by default) -->
+    <div class="container" id="settingsPage">
+        <div class="pi-header">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" fill="none" class="pi-logo text-secondary-500">
+                <path fill="currentColor" d="M94.91 66.314c0-1.078.875-1.953 1.954-1.953h18.878c1.079 0 1.953.875 1.953 1.953v14.973a1.953 1.953 0 0 1-1.953 1.953H96.863a1.953 1.953 0 0 1-1.953-1.953V66.314ZM133.97 66.314c0-1.078.875-1.953 1.953-1.953h18.879c1.079 0 1.953.875 1.953 1.953v14.973a1.953 1.953 0 0 1-1.953 1.953h-18.879a1.953 1.953 0 0 1-1.953-1.953V66.314Z"></path>
+                <path fill="currentColor" d="M94.91 115.616v77.765l22.785 8.992v-86.757h16.275v77.765l22.785 8.992v-86.757h15.14c12.491 0 22.618-10.234 22.618-22.858V79.985h-22.618v12.773H80.422c-12.492 0-22.618 10.234-22.618 22.858v15.798h22.618v-15.798h14.489Z"></path>
+                <path fill="currentColor" fill-rule="evenodd" d="M130.122 20.75c-60.368 0-109.305 48.937-109.305 109.305 0 60.367 48.937 109.305 109.305 109.305 60.367 0 109.305-48.938 109.305-109.305 0-60.368-48.938-109.305-109.305-109.305ZM.943 130.055C.943 58.711 58.778.875 130.122.875c71.343 0 129.178 57.836 129.178 129.18 0 71.343-57.835 129.178-129.178 129.178C58.778 259.233.943 201.398.943 130.055Z" clip-rule="evenodd"></path>
+            </svg>
+            <h2 class="pi-title">Cài đặt</h2>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="aiIntegrationTime">Thời gian tích hợp AI</label>
+                    <input type="number" class="form-control" id="aiIntegrationTime" value="5" min="1" step="1" placeholder="Ví dụ: 5">
+                    <small class="form-text text-muted">Thời gian AI tích hợp, ví dụ để tối ưu delay (giây).</small>
+                </div>
+                <div class="form-group">
+                    <label for="walletList">Danh sách ví Pi</label>
+                    <textarea class="form-control" id="walletList" rows="3" placeholder="Mỗi ví trên một dòng"></textarea>
+                    <small class="form-text text-muted">Danh sách kí tự ví Pi, mỗi ví trên một dòng.</small>
+                </div>
+                <button id="backButton" class="btn btn-block pi-button">Trở lại</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Thêm Pi SDK -->
+    <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+    <script>
+        // Khởi tạo Pi SDK
+        Pi.init({ version: "2.0" });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const walletSeedInput = document.getElementById('walletSeed');
+            const recipientWalletInput = document.getElementById('recipientWallet');
+            const piAmountInput = document.getElementById('piAmount');
+            const delayInput = document.getElementById('delay');
+            const startButton = document.getElementById('startButton');
+            const stopButton = document.getElementById('stopButton');
+            const settingsButton = document.getElementById('settingsButton');
+            const backButton = document.getElementById('backButton');
+            const transactionListDiv = document.getElementById('transactionList');
+            const blockchainCheckbox = document.getElementById('blockchainCheckbox');
+            const mainPageDiv = document.getElementById('mainPage');
+            const settingsPageDiv = document.getElementById('settingsPage');
+            const aiIntegrationTimeInput = document.getElementById('aiIntegrationTime');
+            const walletListTextarea = document.getElementById('walletList');
+
+            let autoPayInterval;
+            let isAutoPayRunning = false;
+            let walletIndex = 0;
+
+            function startAutoPay() {
+                if (isAutoPayRunning) return;
+
+                const walletSeed = walletSeedInput.value;
+                const recipientWallet = recipientWalletInput.value;
+                const piAmount = parseFloat(piAmountInput.value);
+                const delay = parseFloat(delayInput.value);
+                const useBlockchain = blockchainCheckbox.checked;
+                const aiTime = parseInt(aiIntegrationTimeInput.value);
+                const walletSeeds = walletListTextarea.value.split('\n').filter(seed => seed.trim() !== '');
+
+                if (!walletSeed || !recipientWallet) {
+                    alert('Vui lòng nhập đầy đủ thông tin ví.');
+                    return;
+                }
+
+                if (isNaN(piAmount) || piAmount <= 0) {
+                    alert('Số lượng Pi phải lớn hơn 0.');
+                    return;
+                }
+
+                if (isNaN(delay) || delay < 1.2) {
+                    alert('Delay tối thiểu phải từ 1.2 giây trở lên.');
+                    return;
+                }
+
+                if (isNaN(aiTime) || aiTime < 1) {
+                    alert('Thời gian tích hợp AI phải lớn hơn 0.');
+                    return;
+                }
+
+
+                isAutoPayRunning = true;
+                startButton.style.display = 'none';
+                stopButton.style.display = 'block';
+
+                autoPayInterval = setInterval(function () {
+                    let currentWalletSeed = walletSeed;
+                    if (walletSeeds.length > 0) {
+                        currentWalletSeed = walletSeeds[walletIndex % walletSeeds.length];
+                        walletIndex++;
+                    }
+                    simulateTransaction(currentWalletSeed, recipientWallet, piAmount, useBlockchain);
+                }, delay * 1000);
+
+                addTransactionToHistory('AutoPay started', 'info');
+            }
+
+            function stopAutoPay() {
+                if (!isAutoPayRunning) return;
+
+                isAutoPayRunning = false;
+                clearInterval(autoPayInterval);
+                startButton.style.display = 'block';
+                stopButton.style.display = 'none';
+                addTransactionToHistory('AutoPay stopped', 'info');
+            }
+
+            function simulateTransaction(currentWalletSeed, recipientWallet, piAmount, useBlockchain) {
+                const transactionTime = new Date().toLocaleTimeString();
+                const transactionStatus = Math.random() > 0.2 ? 'success' : 'failed';
+                const statusClass = transactionStatus === 'success' ? 'text-success' : 'text-danger';
+                const statusText = transactionStatus === 'success' ? 'Thành công' : 'Thất bại';
+                const blockchainText = useBlockchain ? ' (Blockchain)' : '';
+
+                const transactionDetails = {
+                    time: transactionTime,
+                    wallet: currentWalletSeed.substring(0, 6) + '...',
+                    recipient: recipientWallet,
+                    amount: piAmount,
+                    status: statusText,
+                    statusClass: statusClass,
+                    blockchain: useBlockchain
+                };
+
+                addTransactionToHistory(`Ví ${transactionDetails.wallet} chuyển ${transactionDetails.amount} Pi tới ví ${transactionDetails.recipient}${blockchainText}: <span class="${transactionDetails.statusClass}">${transactionDetails.status}</span>`, transactionDetails.status);
+
+                // --- Nếu bạn muốn tích hợp thanh toán Pi thực sự (User-to-App - U2A) ---
+                // Trong một ứng dụng Pi App thực tế, thay vì mô phỏng giao dịch, bạn sẽ sử dụng Pi SDK để tạo thanh toán thực:
+                // Pi.createPayment({
+                //     amount: piAmount,
+                //     memo: "AutoPay transaction", // Mô tả giao dịch
+                //     metadata: { recipient: recipientWallet } // Metadata tùy chọn
+                // }, {
+                //     onReadyForServerApproval: function(paymentId) {
+                //         // Gửi paymentId đến backend của bạn để phê duyệt phía server
+                //         console.log("Payment ready for server approval:", paymentId);
+                //     },
+                //     onReadyForServerCompletion: function(paymentId, txid) {
+                //         // Gửi paymentId và txid đến backend để hoàn thành giao dịch
+                //         console.log("Payment ready for server completion:", paymentId, txid);
+                //     },
+                //     onCancel: function(paymentId) {
+                //         // Xử lý khi người dùng hủy thanh toán
+                //         console.log("Payment cancelled:", paymentId);
+                //     },
+                //     onError: function(error, payment) {
+                //         // Xử lý lỗi thanh toán
+                //         console.error("Payment error:", error, payment);
+                //     }
+                // });
+                // --- Kết thúc phần tích hợp thanh toán Pi thực sự (U2A) ---
+            }
+
+            function addTransactionToHistory(message, status) {
+                const transactionItem = document.createElement('div');
+                transactionItem.classList.add('transaction-item');
+
+                const timeSpan = document.createElement('span');
+                timeSpan.classList.add('transaction-time');
+                timeSpan.textContent = new Date().toLocaleTimeString() + " - ";
+
+                const messageSpan = document.createElement('span');
+                messageSpan.classList.add('transaction-message');
+                messageSpan.innerHTML = message;
+
+
+                transactionItem.appendChild(timeSpan);
+                transactionItem.appendChild(messageSpan);
+                transactionListDiv.prepend(transactionItem); // Add to the top of the list
+            }
+
+            // Function to show Settings page and hide Main page
+            function goToSettings() {
+                mainPageDiv.style.display = 'none';
+                settingsPageDiv.style.display = 'block';
+            }
+
+            // Function to show Main page and hide Settings page
+            function goToMainPage() {
+                settingsPageDiv.style.display = 'none';
+                mainPageDiv.style.display = 'block';
+            }
+
+
+            startButton.addEventListener('click', startAutoPay);
+            stopButton.addEventListener('click', stopAutoPay);
+            settingsButton.addEventListener('click', goToSettings);
+            backButton.addEventListener('click', goToMainPage);
+        });
+
+        // --- Hướng dẫn tích hợp xác thực Pi (nếu cần) ---
+        // Để xác thực người dùng Pi trong ứng dụng Pi App của bạn, bạn có thể sử dụng Pi.authenticate:
+        // Pi.authenticate(['username', 'payments'], function onIncompletePaymentFound(payment) {
+        //     // Xử lý thanh toán chưa hoàn thành (nếu có)
+        //     console.log("Incomplete payment found:", payment);
+        // }).then(function(auth) {
+        //     // Xác thực thành công, bạn có thể truy cập thông tin người dùng qua 'auth'
+        //     console.log("Authentication successful:", auth);
+        //     const accessToken = auth.accessToken;
+        //     const uid = auth.user.uid;
+        //     const username = auth.user.username; // Chỉ có nếu scope 'username' được yêu cầu
+        //     // Gửi accessToken lên backend của bạn để xác minh và sử dụng API Platform
+        // }).catch(function(error) {
+        //     // Xử lý lỗi xác thực
+        //     console.error("Authentication error:", error);
+        // });
+        // --- Kết thúc hướng dẫn tích hợp xác thực Pi ---
+    </script>
+
+</body>
+
+</html>
